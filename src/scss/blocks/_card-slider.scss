@@ -2,6 +2,12 @@
     position: relative;
     z-index: 40;
     padding: 8.4rem 0;
+
+
+    @include breakpoint(small-mobile) {
+        padding-top: 1.2rem;
+        padding-bottom: 5rem;
+    }
 }
 
 
@@ -29,9 +35,10 @@
         clear: both;
     }
 
-
-    &:hover {
-        transform: translateZ(0) scale(1.05);
+    @media screen and (min-width: 577px) {
+        &:hover {
+            transform: translateZ(0) scale(1.05);
+        }
     }
 }
 
@@ -46,6 +53,9 @@
     justify-content: flex-end;
     position: relative;
     z-index: 1;
+    @include breakpoint(small-mobile) {
+        padding: 2.2rem;
+    }
     &::after {
         content: '';
         position: absolute;
@@ -72,6 +82,10 @@
     letter-spacing: 0.08em;
     text-align: center;
     align-self: flex-start;
+    @include breakpoint(small-mobile) {
+        padding: .8rem;
+        font-size: 1rem;
+    }
 }
 
 
@@ -86,6 +100,10 @@
     padding: 1rem 1.2rem;
     text-align: center;
     align-self: flex-start;
+    @include breakpoint(mobile) {
+        font-size: 1rem;
+        padding: .7rem 1rem;
+    }
 }
 
 .card-slider__card-title {
@@ -95,11 +113,18 @@
     line-height: 1.3;
     font-weight: 700;
     margin-top: 1.8rem;
+
+    @include breakpoint(small-mobile) {
+        margin-top: 1rem;
+        font-size: 1.8rem;
+    }
 }
 
 .card-slider__desktop {
     position: relative;
-
+    @include breakpoint(small-mobile) {
+        display: none;
+    }
     .swiper-container {
         padding: 3rem;
         margin: -3rem;
@@ -159,3 +184,107 @@
     width: 8.6rem;
     height: 8.6rem;
 }
+
+
+.card-slider__desktop-label {
+    background-color: #fff;
+    position: absolute;
+    left: calc((100vw - 100%) / 2 * -1);
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 700;
+    padding: 1.2rem 2rem;
+    right: calc(100% - 12rem);
+    text-align: right;
+    z-index: 20;
+    top: 7rem;
+    pointer-events: none;
+}
+
+
+.card-slider__mobile {
+    position: relative;
+   
+}
+
+
+.card-slider__mobile-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 80;
+    svg {   
+        fill: white;
+        width: 1.2rem;
+        height: 2rem;
+    }
+
+
+    &--prev {
+        left: 1.2rem;
+    }
+
+    &--next {
+        right: 1.2rem;
+    }
+}
+
+.card-slider__mobile-slider {
+   
+}
+
+.card-slider__mobile-slider-container {
+    position: relative;
+    &::after {
+        content: '';
+        padding-bottom: 100%;
+        width: 100%;
+        display: block;
+    }
+}
+
+
+.card-slider__mobile-slider-slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: transform .8s;
+   
+
+    &.swipe-left {
+        animation-name: swipe-left;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+
+
+// @keyframes swipe-left {
+//     0% {
+//         transform: translateZ(0);
+//         opacity: 1;
+//     }
+
+
+//     100% {
+//         transform: translateZ(0) translateX(-150%);
+//         opacity: 0;
+//     }
+// }
+// @keyframes swipe-right {
+//     0% {
+//         transform: translateZ(0);
+//         opacity: 1;
+//     }
+
+
+//     100% {
+//         transform: translateZ(0) translateX(150%);
+//         opacity: 0;
+//     }
+// }

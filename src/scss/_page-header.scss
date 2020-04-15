@@ -25,30 +25,51 @@
     @media screen and (min-width: 2131px) {
         width: 100%;
     }
+
+    @include breakpoint(small-mobile) {
+        top: -12rem;
+        width: 122.8rem;
+    }
 }
 
 .page-header__row {
     display: flex;
     padding: 3.6rem 0;
    
-
+    @include breakpoint(small-mobile) {
+        padding: 2rem 0;
+        align-items: flex-start;
+        
+    }
     
 }
 
 
 .page-header__logo {
-
+    flex-shrink: 0;
+    @include breakpoint(small-mobile) {
+        margin-right: auto;
+    }
 }
 
 
 .page-header__logo-image {
     width: 32.4rem;
+
+    @include breakpoint(small-mobile) {
+        width: 18rem;
+    }
 }
 
 
 
 .page-header__navigation {
     margin-left: auto;
+
+
+    @include breakpoint(small-mobile) {
+        display: none;
+    }
 }
 
 
@@ -208,5 +229,47 @@
     }
     &:last-child {
         margin-right: 0;
+    }
+}
+
+
+
+.page-header__mobile-search-link {
+    display: none;
+    flex-shrink: 0;
+    margin-right: 2rem;
+
+    svg {
+        width: 2.2rem;
+        height: 2.2rem;
+        fill: white;
+    }
+    @include breakpoint(small-mobile) {
+        display: block;
+    }
+}
+
+
+.page-header__burger {
+    display: none;
+    margin-top: 0.2rem;
+    @include breakpoint(small-mobile) {
+        display: block;
+    }
+}
+
+
+.page-header__burger-content {
+    display: flex;
+    flex-direction: column;
+    & > span {
+        height: 3px;
+        width: 22px;
+        background-color: #fff;
+        margin-bottom: 4px;
+        display: block;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }

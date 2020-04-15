@@ -188,7 +188,11 @@
                                 </div>
                             </div>
                         </div>
-
+                        <a href="#" class="page-header__mobile-search-link">
+                            <svg width="28" height="6" aria-hidden="true" class="icon-search">
+                                <use xlink:href="#search" />
+                            </svg>
+                        </a>
                         <button class="page-header__burger">
                             <span class="page-header__burger-content">
                                 <span></span>
@@ -214,6 +218,9 @@
                                     <use xlink:href="#slider-arrow-right" />
                                 </svg>
                             </button>
+                            <div class="card-slider__desktop-label">
+                                Свежее
+                            </div>
                             <div class="swiper-container">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
@@ -271,7 +278,63 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-slider__mobile"></div>
+                        <div class="card-slider__mobile js-mobile-card-slider">
+                            <button class="card-slider__mobile-arrow card-slider__mobile-arrow--prev">
+                                <svg width="12" height="20" aria-hidden="true" class="icon-arrow-left">
+                                    <use xlink:href="#arrow-left" />
+                                </svg>
+                            </button>
+                            <div class="card-slider__mobile-slider-container">
+                                <div class="card-slider__mobile-slider-slide">
+                                    <a href="#" class="card-slider__card">
+                                        <img src="img/card-slider/image-1.jpg" alt="" class="card-slider__card-image" />
+                                        <div class="card-slider__card-content">
+                                            <span class="card-slider__card-tag">
+                                                статья
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-slider__mobile-slider-slide">
+                                    <a href="#" class="card-slider__card">
+                                        <img src="img/card-slider/image-2.jpg" alt="" class="card-slider__card-image" />
+                                        <svg width="86" height="86" aria-hidden="true" class="icon-play card-slider__card-play">
+                                            <use xlink:href="#play" />
+                                        </svg>
+                                        <div class="card-slider__card-content">
+                                            <span class="card-slider__card-tag">
+                                                видео
+                                            </span>
+                                            <h5 class="card-slider__card-title">
+                                                Ребёнок, который привык, что его не кушают
+                                            </h5>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-slider__mobile-slider-slide">
+                                    <a href="#" class="card-slider__card">
+                                        <img src="img/card-slider/image-3.jpg" alt="" class="card-slider__card-image" />
+                                        <div class="card-slider__card-content">
+                                            <span class="card-slider__date">
+                                                C 15 февраля
+                                            </span>
+                                            <span class="card-slider__card-tag">
+                                                курс
+                                            </span>
+                                            <h5 class="card-slider__card-title">
+                                                Мама и деньги
+                                            </h5>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <button class="card-slider__mobile-arrow card-slider__mobile-arrow--next">
+                                <svg width="12" height="20" aria-hidden="true" class="icon-arrow-right">
+                                    <use xlink:href="#arrow-right" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </section>
             </main>
