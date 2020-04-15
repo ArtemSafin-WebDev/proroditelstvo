@@ -33,14 +33,9 @@ export default function() {
         const prev = element.querySelector('.card-slider__mobile-arrow--prev');
         const next = element.querySelector('.card-slider__mobile-arrow--next');
 
-        let state = {
-
-        }
-        
+        let state = {};
 
         function setActiveSlide(index) {
-          
-
             if (slidesCount <= 1) return;
 
             let currentSlide = slides[index];
@@ -63,13 +58,11 @@ export default function() {
                 }
             }
 
-
             state = {
                 currentSlide,
                 prevSlide,
                 nextSlide
             };
-
 
             slides.forEach(slide => {
                 slide.style.transform = '';
@@ -86,42 +79,65 @@ export default function() {
                 }
             });
 
-
             activeSlideIndex = index;
 
-            console.log(state);  
+            console.log(state);
         }
 
         setActiveSlide(activeSlideIndex);
 
-
         function nextSlide() {
-            if (activeSlideIndex < slidesCount - 1) {
-                setActiveSlide(activeSlideIndex + 1);
-            } else {
-                setActiveSlide(0);
-            }
+            if (sliderAnimating) return;
+            const activeSlide = slides[activeSlideIndex];
+
+            const animationEndHandler = () => {
+                activeSlide.classList.remove('swipe-left');
+                sliderAnimating = false;
+                activeSlide.removeEventListener('animationend', animationEndHandler);
+
+                if (activeSlideIndex < slidesCount - 1) {
+                    setActiveSlide(activeSlideIndex + 1);
+                } else {
+                    setActiveSlide(0);
+                }
+            };
+
+            activeSlide.addEventListener('animationend', animationEndHandler);
+
+            activeSlide.classList.add('swipe-left');
+            sliderAnimating = true;
         }
 
         function prevSlide() {
-            if (activeSlideIndex > 0) {
-                setActiveSlide(activeSlideIndex - 1);
-            } else {
-                setActiveSlide(slidesCount - 1);
-            }
-        }
+            if (sliderAnimating) return;
 
+            const activeSlide = slides[activeSlideIndex];
+
+            const animationEndHandler = () => {
+                activeSlide.classList.remove('swipe-right');
+                sliderAnimating = false;
+                activeSlide.removeEventListener('animationend', animationEndHandler);
+
+                if (activeSlideIndex > 0) {
+                    setActiveSlide(activeSlideIndex - 1);
+                } else {
+                    setActiveSlide(slidesCount - 1);
+                }
+            };
+
+            activeSlide.addEventListener('animationend', animationEndHandler);
+
+            activeSlide.classList.add('swipe-right');
+            sliderAnimating = true;
+        }
 
         prev.addEventListener('click', event => {
             event.preventDefault();
             prevSlide();
-        })
+        });
         next.addEventListener('click', event => {
             event.preventDefault();
             nextSlide();
-        })
-
-        
-
+        });
     });
 }
