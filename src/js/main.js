@@ -2,6 +2,7 @@ import polyfills from './polyfills';
 import detectTouch from './detectTouch';
 import cardSlider from './cardSlider';
 import popularArticlesSlider from './popularArticles';
+import coursesSliders from './coursesSliders';
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -11,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     cardSlider();
 
     popularArticlesSlider();
+    coursesSliders();
 });
 
 window.addEventListener('load', function() {
