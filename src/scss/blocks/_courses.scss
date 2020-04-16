@@ -144,7 +144,8 @@
     background-color: white;
     z-index: 1;
     flex-grow: 1;
-
+    overflow: hidden;
+    user-select: none;
     &:link,
     &:visited {
         color: var(--text-color);
@@ -173,6 +174,13 @@
         display: table;
         clear: both;
     }
+
+    &:hover {
+        .courses__top-slider-card-image {
+            transform: scale(1.05);
+            transition: transform .3s ease-out;
+        }
+    }
 }
 
 .courses__top-slider-card-image {
@@ -183,6 +191,7 @@
     height: 100%;
     @include objectFitCover();
     z-index: -1;
+    transition: transform .3s ease-in;
 }
 
 .courses__top-slider-card-content {
@@ -357,7 +366,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-
+    user-select: none;
     &:link,
     &:visited {
         color: white;
@@ -377,7 +386,7 @@
     background-color: var(--text-color);
 
     @include breakpoint(small-mobile) {
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
     &::before {
         content: 'смотреть';
@@ -407,7 +416,7 @@
         content: '';
         display: block;
         width: 100%;
-        padding-bottom: 56.25%;
+        padding-bottom: 64%;
     }
 }
 
