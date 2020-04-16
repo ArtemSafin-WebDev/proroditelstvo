@@ -118,10 +118,19 @@ export default function() {
                 sliderAnimating = false;
                 activeSlide.removeEventListener('animationend', animationEndHandler);
 
-                if (activeSlideIndex > 0) {
-                    setActiveSlide(activeSlideIndex - 1);
+
+                // Выглядит плохо
+
+                // if (activeSlideIndex > 0) {
+                //     setActiveSlide(activeSlideIndex - 1);
+                // } else {
+                //     setActiveSlide(slidesCount - 1);
+                // }
+
+                if (activeSlideIndex < slidesCount - 1) {
+                    setActiveSlide(activeSlideIndex + 1);
                 } else {
-                    setActiveSlide(slidesCount - 1);
+                    setActiveSlide(0);
                 }
             };
 

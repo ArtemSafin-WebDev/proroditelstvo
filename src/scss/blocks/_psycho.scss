@@ -1,0 +1,169 @@
+.psycho {
+    margin-bottom: 9rem;
+    @include breakpoint(small-mobile) {
+        margin-bottom: 5rem;
+    }
+}
+
+.psycho__row {
+    display: flex;
+    align-items: center;
+    background: #F9F9F9;
+
+    @include breakpoint(small-mobile) {
+        flex-direction: column;
+        align-items: initial;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+.psycho__content {
+    padding-left: 7.3rem;
+    padding-bottom: 8rem;
+    padding-top: 9.6rem;
+    padding-right: 1rem;
+    width: 50%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+
+
+    @include breakpoint(small-mobile) {
+        padding: 2.4rem;
+        padding-top: 4rem;
+        width: 100%;
+        flex-grow: 0;
+        align-self: initial;
+        position: relative;
+        z-index: 5;
+    }
+}
+
+
+.psycho__title {
+    font-size: 3.6rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+
+    @include breakpoint(small-mobile) {
+        font-size: 1.6rem;
+        line-height: 1.3;
+
+    }
+}
+
+
+.psycho__description {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    @include breakpoint(small-mobile) {
+        font-size: 1.2rem;
+        line-height: 1.3;
+        margin-bottom: 4rem;
+        max-width: 13.6rem;
+    }
+}
+
+
+.psycho__image {
+    width: 55rem;
+    height: auto;
+    flex-shrink: 0;
+    mix-blend-mode: multiply;
+
+
+    @include breakpoint(small-mobile) {
+        position: absolute;
+        top: 2.8rem;
+        width: 18.7rem;
+        right: -.8rem;
+    }
+}
+
+
+.psycho__form {
+    margin-top: auto;
+    display: flex;
+
+
+    @include breakpoint(small-mobile) {
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
+
+
+.psycho__form-group {
+    flex-basis: 30%;
+    flex-grow: 1;
+    margin-right: 1.8rem;
+
+    &:nth-child(2) {
+        margin-right: 2.3rem;
+    }
+
+
+    @include breakpoint(small-mobile) {
+        flex-basis: 100%;
+        margin-bottom: 1.5rem;
+        margin-right: 0;
+        &:nth-child(2) {
+            margin-right: 0;
+        }
+    }
+}
+
+
+.psycho__form-input {
+    border: 1px solid #BCBCBC;
+    border-bottom-width: .3rem;
+    padding: 1.8rem 2rem;
+    font: inherit;
+    width: 100%;
+    font-size: 1.6rem;
+    background: #F9F9F9;
+    @include breakpoint(small-mobile) {
+        padding: 1.6rem;
+        font-size: 1.6rem;
+    }
+
+    @include placeholder {
+        color: inherit;
+        @include breakpoint(small-mobile) {
+            text-align: center;
+        }
+    }
+}
+
+
+
+.psycho__form-submit {
+    flex-shrink: 0;
+    white-space: nowrap;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.8rem 2.3rem;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    letter-spacing: 0.05rem;
+
+    transition: background-color .2s;
+    &:hover {
+        background-color: var(--text-color);
+    }
+
+
+
+    @include breakpoint(small-mobile) {
+        font-size: 1.6rem;
+        padding: 1.6rem 2rem;
+    }
+}
