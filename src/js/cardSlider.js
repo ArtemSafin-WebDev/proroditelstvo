@@ -10,11 +10,20 @@ export default function() {
 
         new Swiper(container, {
             slidesPerView: 3,
-            spaceBetween: 60,
+            spaceBetween: 30,
             watchOverflow: true,
             navigation: {
                 nextEl: element.querySelector('.card-slider__desktop-arrow--next'),
                 prevEl: element.querySelector('.card-slider__desktop-arrow--prev')
+            },
+            breakpoints: {
+                769: {
+                    spaceBetween: 40,
+                },
+
+                969: {
+                    spaceBetween: 60,
+                }
             }
         });
     });

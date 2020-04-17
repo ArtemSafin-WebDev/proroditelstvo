@@ -17,7 +17,11 @@ export default function() {
             breakpoints: {
                 577: {
                     slidesPerView: 2,
-                    spaceBetween: 48
+                    spaceBetween: 30
+                },
+                769: {
+                    spaceBetween: 48,
+                    slidesPerView: 2,
                 }
             }
         });
@@ -40,7 +44,12 @@ export default function() {
             breakpoints: {
                 577: {
                     slidesPerView: 3,
-                    spaceBetween: 50
+                    spaceBetween: 30
+                },
+
+                769: {
+                    spaceBetween: 50,
+                    slidesPerView: 3
                 }
             }
         });

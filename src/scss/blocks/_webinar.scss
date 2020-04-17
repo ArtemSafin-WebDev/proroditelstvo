@@ -85,6 +85,10 @@
         width: 100%;
         flex-grow: 0;
     }
+
+    @include breakpoint(mobile) {
+        font-size: 3.4rem;
+    }
     @include breakpoint(small-mobile) {
         font-size: 1.8rem;
         line-height: 2.2rem;

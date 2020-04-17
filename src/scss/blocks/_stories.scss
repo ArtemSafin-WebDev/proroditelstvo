@@ -53,10 +53,10 @@
 
 .stories__content {
     .swiper-container {
-        @include breakpoint(small-mobile) {
+        @include breakpoint(mobile) {
             overflow: visible;
         }
-        @include breakpointMF(mobile) {
+        @include breakpointMF(small-tablet) {
             overflow: visible;
             margin: 0;
         }
@@ -64,7 +64,7 @@
 
 
     .swiper-wrapper {
-        @include breakpointMF(mobile) {
+        @include breakpointMF(small-tablet) {
             flex-wrap: wrap;
             display: flex;
             margin: -2.4rem;
@@ -74,12 +74,12 @@
     .swiper-slide {
         display: flex;
         flex-direction: column;
-        @include breakpointMF(mobile) {
+        @include breakpointMF(small-tablet) {
             padding: 2.4rem;
             width: 25%;
         }
 
-        @include breakpoint(small-mobile) {
+        @include breakpoint(mobile) {
             width: 30rem;
         }
     }

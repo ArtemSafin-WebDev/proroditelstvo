@@ -9,7 +9,7 @@ export default function() {
 
         let sliderInstance = null;
 
-        const mql = window.matchMedia('(max-width: 568px)');
+        const mql = window.matchMedia('(max-width: 768px)');
 
         function screenTest(mq) {
             if (mq.matches) {

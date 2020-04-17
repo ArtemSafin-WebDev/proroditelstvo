@@ -180,7 +180,8 @@
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 4.8rem;
         grid-auto-flow: dense;
-        @include breakpoint(mobile) {
+
+        @media screen and (max-width: 767px) {
             grid-template-columns: repeat(2, 1fr);
         }
         @include breakpoint(small-mobile) {
@@ -234,6 +235,8 @@
 }
 
 .articles__list-wrapper:not(.show-all) {
+   
+  
     @include breakpoint(small-mobile) {
         .articles__list-item:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)) {
             display: none;
@@ -283,6 +286,11 @@
     line-height: 2rem;
     text-transform: uppercase;
     margin-bottom: 1.7rem;
+
+    @include breakpoint(small-tablet) {
+        font-size: 2.2rem;
+        line-height: 1.3;
+    }
 }
 
 .articles__card-info-row {
@@ -385,7 +393,7 @@
 
 .articles__popular-articles {
     margin-bottom: 5.2rem;
-    @include breakpoint(small-mobile) {
+    @include breakpoint(small-tablet) {
         margin-bottom: 0;
     }
 }
@@ -396,6 +404,11 @@
     font-weight: 700;
     margin-bottom: 2.5rem;
     text-transform: uppercase;
+
+    @include breakpoint(small-tablet) {
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
 
     @include breakpoint(small-mobile) {
         font-size: 1.6rem;
@@ -424,10 +437,17 @@
             grid-template-rows: repeat(3, 1fr);
             grid-auto-flow: column dense;
             grid-row-gap: 2rem;
+
+            grid-gap: 2rem;
             height: auto;
+
+
+            @include breakpoint(small-mobile) {
+                grid-column-gap: 0;
+            }
         }
 
-        @include breakpointMF(mobile) {
+        @include breakpointMF(tablet) {
             display: block;
             box-sizing: border-box;
             height: auto;
@@ -468,6 +488,10 @@
     flex-shrink: 0;
     width: 9rem;
 
+    @include breakpoint(small-tablet) {
+        width: 14rem;
+    }
+
     @include breakpoint(small-mobile) {
         width: 8rem;
         margin-right: 1.5rem;
@@ -500,8 +524,15 @@
     line-height: 1.2;
     margin-bottom: 0.6rem;
 
+
+    @include breakpoint(small-tablet) {
+        font-size: 2.2rem;
+        line-height: 1.3;
+    }
+
     @include breakpoint(small-mobile) {
         font-size: 1.4rem;
+
     }
 }
 

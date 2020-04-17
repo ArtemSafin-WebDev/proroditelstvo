@@ -1577,10 +1577,14 @@ img.lazyload:not([src]) {
   line-height: 1.3;
   font-weight: 700;
   margin-top: 1.8rem; }
+  @media only screen and (max-width: 768px) {
+    .card-slider__card-title {
+      display: none; } }
   @media only screen and (max-width: 576px) {
     .card-slider__card-title {
       margin-top: 1rem;
-      font-size: 1.8rem; } }
+      font-size: 1.8rem;
+      display: block; } }
 
 .card-slider__desktop {
   position: relative; }
@@ -1869,6 +1873,9 @@ img.lazyload:not([src]) {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
             flex-grow: 0; }
+  @media only screen and (max-width: 768px) {
+    .webinar__name {
+      font-size: 3.4rem; } }
   @media only screen and (max-width: 576px) {
     .webinar__name {
       font-size: 1.8rem;
@@ -2180,7 +2187,7 @@ img.lazyload:not([src]) {
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 4.8rem;
       grid-auto-flow: dense; }
-      @media only screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         .articles__list {
           grid-template-columns: repeat(2, 1fr); } }
       @media only screen and (max-width: 576px) {
@@ -2276,6 +2283,10 @@ img.lazyload:not([src]) {
   line-height: 2rem;
   text-transform: uppercase;
   margin-bottom: 1.7rem; }
+  @media only screen and (max-width: 968px) {
+    .articles__card-name {
+      font-size: 2.2rem;
+      line-height: 1.3; } }
 
 .articles__card-info-row {
   display: -webkit-box;
@@ -2387,7 +2398,7 @@ img.lazyload:not([src]) {
 
 .articles__popular-articles {
   margin-bottom: 5.2rem; }
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 968px) {
     .articles__popular-articles {
       margin-bottom: 0; } }
 
@@ -2397,6 +2408,10 @@ img.lazyload:not([src]) {
   font-weight: 700;
   margin-bottom: 2.5rem;
   text-transform: uppercase; }
+  @media only screen and (max-width: 968px) {
+    .articles__popular-articles-heading {
+      font-size: 3rem;
+      margin-bottom: 4rem; } }
   @media only screen and (max-width: 576px) {
     .articles__popular-articles-heading {
       font-size: 1.6rem;
@@ -2422,8 +2437,12 @@ img.lazyload:not([src]) {
       grid-template-rows: repeat(3, 1fr);
       grid-auto-flow: column dense;
       grid-row-gap: 2rem;
-      height: auto; } }
-  @media only screen and (min-width: 577px) {
+      grid-gap: 2rem;
+      height: auto; }
+      @media only screen and (max-width: 576px) {
+        .articles__popular-articles-slider .swiper-wrapper {
+          grid-column-gap: 0; } } }
+  @media only screen and (min-width: 969px) {
     .articles__popular-articles-slider .swiper-wrapper {
       display: block;
       -webkit-box-sizing: border-box;
@@ -2458,6 +2477,9 @@ img.lazyload:not([src]) {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 9rem; }
+  @media only screen and (max-width: 968px) {
+    .articles__popular-articles-card-image-container {
+      width: 14rem; } }
   @media only screen and (max-width: 576px) {
     .articles__popular-articles-card-image-container {
       width: 8rem;
@@ -2492,6 +2514,10 @@ img.lazyload:not([src]) {
   font-size: 1.6rem;
   line-height: 1.2;
   margin-bottom: 0.6rem; }
+  @media only screen and (max-width: 968px) {
+    .articles__popular-articles-card-title {
+      font-size: 2.2rem;
+      line-height: 1.3; } }
   @media only screen and (max-width: 576px) {
     .articles__popular-articles-card-title {
       font-size: 1.4rem; } }
@@ -2768,7 +2794,8 @@ img.lazyload:not([src]) {
 
 .psycho__description {
   font-size: 2rem;
-  line-height: 2.4rem; }
+  line-height: 2.4rem;
+  margin-bottom: 4rem; }
   @media only screen and (max-width: 576px) {
     .psycho__description {
       font-size: 1.2rem;
@@ -2782,6 +2809,9 @@ img.lazyload:not([src]) {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   mix-blend-mode: multiply; }
+  @media only screen and (max-width: 968px) {
+    .psycho__image {
+      width: 40rem; } }
   @media only screen and (max-width: 576px) {
     .psycho__image {
       position: absolute;
@@ -3307,6 +3337,9 @@ img.lazyload:not([src]) {
   line-height: 3.1rem;
   text-transform: uppercase;
   margin-bottom: 1.7rem; }
+  @media only screen and (max-width: 768px) {
+    .courses__bottom-slider-card-title {
+      font-size: 2rem; } }
   @media only screen and (max-width: 576px) {
     .courses__bottom-slider-card-title {
       font-size: 1.3rem;
@@ -3738,16 +3771,16 @@ img.lazyload:not([src]) {
   .stories__heading-link:hover {
     color: var(--text-color); }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   .stories__content .swiper-container {
     overflow: visible; } }
 
-@media only screen and (min-width: 577px) {
+@media only screen and (min-width: 769px) {
   .stories__content .swiper-container {
     overflow: visible;
     margin: 0; } }
 
-@media only screen and (min-width: 577px) {
+@media only screen and (min-width: 769px) {
   .stories__content .swiper-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -3764,11 +3797,11 @@ img.lazyload:not([src]) {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  @media only screen and (min-width: 577px) {
+  @media only screen and (min-width: 769px) {
     .stories__content .swiper-slide {
       padding: 2.4rem;
       width: 25%; } }
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 768px) {
     .stories__content .swiper-slide {
       width: 30rem; } }
 

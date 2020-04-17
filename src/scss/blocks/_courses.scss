@@ -435,6 +435,11 @@
     text-transform: uppercase;
     margin-bottom: 1.7rem;
 
+
+    @include breakpoint(mobile) {
+        font-size: 2rem;
+    }
+
     @include breakpoint(small-mobile) {
         font-size: 1.3rem;
         line-height: 1.6rem;
