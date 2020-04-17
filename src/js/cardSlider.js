@@ -1,4 +1,5 @@
 import Swiper from 'swiper';
+import Hammer from 'hammerjs';
 
 export default function() {
     // Desktop card slider
@@ -101,6 +102,10 @@ export default function() {
 
             const animationEndHandler = () => {
                 activeSlide.classList.remove('swipe-left');
+                activeSlide.classList.add('no-transition');
+                setTimeout(() => {
+                    activeSlide.classList.remove('no-transition');
+                }, 600)
                 sliderAnimating = false;
                 activeSlide.removeEventListener('animationend', animationEndHandler);
 
@@ -124,6 +129,10 @@ export default function() {
 
             const animationEndHandler = () => {
                 activeSlide.classList.remove('swipe-right');
+                activeSlide.classList.add('no-transition');
+                setTimeout(() => {
+                    activeSlide.classList.remove('no-transition');
+                }, 600)
                 sliderAnimating = false;
                 activeSlide.removeEventListener('animationend', animationEndHandler);
 
@@ -157,5 +166,14 @@ export default function() {
             event.preventDefault();
             nextSlide();
         });
+
+        const hammertime = new Hammer(element);
+
+        hammertime.on('swipeleft', () => {
+            nextSlide();
+        })
+        hammertime.on('swiperight', () => {
+            prevSlide();
+        })
     });
 }

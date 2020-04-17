@@ -275,12 +275,18 @@
         animation-duration: .6s;
         animation-timing-function: ease-out;
         animation-fill-mode: forwards;
+        
     }
     &.swipe-right {
         animation-name: swipe-right;
         animation-duration: .6s;
         animation-timing-function: ease-out;
         animation-fill-mode: forwards;
+       
+    }
+
+    &.no-transition {
+        transition: none !important;
     }
 }
 
