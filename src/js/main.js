@@ -5,12 +5,13 @@ import popularArticlesSlider from './popularArticles';
 import coursesSliders from './coursesSliders';
 import videoTabs from './videoTabs';
 import storiesSliders from './storiesSlider';
+import burgerMenu from './burgerMenu';
 
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
     detectTouch();
-
+    burgerMenu();
     cardSlider();
     popularArticlesSlider();
     coursesSliders();
