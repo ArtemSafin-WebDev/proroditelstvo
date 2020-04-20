@@ -1,11 +1,21 @@
-<header class="page-header">
+<header class="page-header {% if header == 'dark' %} page-header--dark {% endif %}">
     <div class="page-header__bg">
-        <img src="img/header-cemicircle.svg" alt="" class="page-header__bg-image">
+
+        {% if header == 'dark' %}
+             <img src="img/header-cemicircle-grey.svg" alt="" class="page-header__bg-image"/>
+        {% else %}
+            <img src="img/header-cemicircle.svg" alt="" class="page-header__bg-image"/>
+        {% endif %}
     </div>
     <div class="container">
         <div class="page-header__row">
             <a href="index.html" class="page-header__logo">
-                <img src="img/logo.svg" alt="Логотип" width="324" class="page-header__logo-image" />
+
+                {% if header == 'dark' %}
+                    <img src="img/logo-violet.svg" alt="Логотип" width="324" class="page-header__logo-image"/>
+                {% else %}
+                    <img src="img/logo.svg" alt="Логотип" width="324" class="page-header__logo-image"/>
+                {% endif %}
             </a>
 
             <div class="page-header__navigation">
@@ -32,7 +42,7 @@
                         <div class="page-header__main-nav-more">
                             <span class="page-header__main-nav-more-content">
                                 <svg width="28" height="6" aria-hidden="true" class="icon-dots">
-                                    <use xlink:href="#dots" />
+                                    <use xlink:href="#dots"/>
                                 </svg>
                             </span>
                             <div class="page-header__main-nav-more-dropdown">
@@ -52,7 +62,7 @@
 
                         <a href="#" class="page-header__search-link">
                             <svg width="28" height="6" aria-hidden="true" class="icon-search">
-                                <use xlink:href="#search" />
+                                <use xlink:href="#search"/>
                             </svg>
                             <span class="page-header__search-link-text">
                                 Поиск
@@ -62,27 +72,27 @@
                     <div class="page-header__social">
                         <a href="#" class="page-header__social-link">
                             <svg width="22" height="22" aria-hidden="true" class="icon-instagram">
-                                <use xlink:href="#instagram" />
+                                <use xlink:href="#instagram"/>
                             </svg>
                         </a>
                         <a href="#" class="page-header__social-link">
                             <svg width="22" height="22" aria-hidden="true" class="icon-fb">
-                                <use xlink:href="#fb" />
+                                <use xlink:href="#fb"/>
                             </svg>
                         </a>
                         <a href="#" class="page-header__social-link">
                             <svg width="22" height="22" aria-hidden="true" class="icon-youtube">
-                                <use xlink:href="#youtube" />
+                                <use xlink:href="#youtube"/>
                             </svg>
                         </a>
                         <a href="#" class="page-header__social-link">
                             <svg width="22" height="22" aria-hidden="true" class="icon-telegram">
-                                <use xlink:href="#telegram" />
+                                <use xlink:href="#telegram"/>
                             </svg>
                         </a>
                         <a href="#" class="page-header__social-link">
                             <svg width="22" height="22" aria-hidden="true" class="icon-vk">
-                                <use xlink:href="#vk" />
+                                <use xlink:href="#vk"/>
                             </svg>
                         </a>
                     </div>
@@ -90,7 +100,7 @@
             </div>
             <a href="#" class="page-header__mobile-search-link">
                 <svg width="28" height="6" aria-hidden="true" class="icon-search">
-                    <use xlink:href="#search" />
+                    <use xlink:href="#search"/>
                 </svg>
             </a>
             <button class="page-header__burger">

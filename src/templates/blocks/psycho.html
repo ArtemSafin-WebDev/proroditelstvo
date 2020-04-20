@@ -8,12 +8,12 @@
                 <p class="psycho__description">
                     или сказ о том, как не зарыть талант в землю
                 </p>
-                <form action="/" method="POST" class="psycho__form">
+                <form action="/" method="POST" class="psycho__form" data-parsley-validate>
                     <div class="psycho__form-group">
-                        <input type="text" name="name" class="psycho__form-input" placeholder="Имя">
+                        <input type="text" name="name" class="psycho__form-input" placeholder="Имя" required>
                     </div>
                     <div class="psycho__form-group">
-                        <input type="tel" name="name" class="psycho__form-input" placeholder="Телефон">
+                        <input type="tel" name="name" class="psycho__form-input js-phone-input" placeholder="Телефон" required data-parsley-phone>
                     </div>
                     <button class="psycho__form-submit">
                         Записаться

@@ -80,7 +80,6 @@
                             </a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -185,9 +184,11 @@
                                     <h4 class="articles__subscription-card-title">
                                         Получайте полезные статьи на емайл
                                     </h4>
-                                    <form action="/" method="POST" class="articles__subscription-card-form">
+                                    <form action="/" method="POST" class="articles__subscription-card-form" data-parsley-validate>
                                         <div class="articles__subscription-card-form-row">
-                                            <input type="email" name="email" class="articles__subscription-card-form-input" placeholder="Электронная почта" />
+                                            <div class="articles__subscription-card-form-input-wrapper">
+                                                <input type="email" name="email" class="articles__subscription-card-form-input" placeholder="Электронная почта" required />
+                                            </div>
                                             <button type="submit" class="articles__subscription-card-form-submit">
                                                 Подписаться
                                             </button>

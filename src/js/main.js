@@ -6,6 +6,7 @@ import coursesSliders from './coursesSliders';
 import videoTabs from './videoTabs';
 import storiesSliders from './storiesSlider';
 import burgerMenu from './burgerMenu';
+import forms from './forms';
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     coursesSliders();
     videoTabs();
     storiesSliders();
+    forms();
 });
 
 window.addEventListener('load', function() {

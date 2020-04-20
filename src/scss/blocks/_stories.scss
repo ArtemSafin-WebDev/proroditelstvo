@@ -10,7 +10,7 @@
 .stories__heading {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
@@ -53,13 +53,9 @@
 
 .stories__content {
     .swiper-container {
-        @include breakpoint(mobile) {
-            overflow: visible;
-        }
-        @include breakpointMF(small-tablet) {
-            overflow: visible;
-            margin: 0;
-        }
+        margin: -2rem;
+        padding: 2rem;
+        overflow: visible;
     }
 
 
@@ -68,6 +64,8 @@
             flex-wrap: wrap;
             display: flex;
             margin: -2.4rem;
+            box-sizing: border-box;
+            width: auto;
         }
     }
 
@@ -87,11 +85,17 @@
 
 .stories__card {
     color: white;
-  
+    transform: translateZ(0);
+    transition: transform .4s;
     position: relative;
     &:link,
     &:visited {
         color: white;
+    }
+
+
+    &:hover {
+        transform: translateZ(0) scale(1.03);
     }
 }
 

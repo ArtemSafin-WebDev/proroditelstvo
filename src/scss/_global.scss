@@ -15,7 +15,7 @@
     --helios: 'HeliosExtC', sans-serif;
     --aqum: 'Aqum', sans-serif;
     --ping-fang: 'PingFang SC', sans-serif;
-
+    --helios-standard: 'Helios', sans-serif;
 
     @include breakpoint(small-mobile) {
         --content-padding: 1.8rem;
@@ -26,23 +26,13 @@ html {
     box-sizing: border-box;
     font-size: 10px;
     @include noHighlight();
-
-
-
     @include breakpoint(large-desktop) {
         font-size: 8px;
     }
 
-
     @include breakpoint(tablet) {
         font-size: 6px;
     }
-
-
-    // @include breakpoint(mobile) {
-    //     font-size: 5px;
-    // }
-
 
     @include breakpoint(small-mobile) {
         font-size: 10px;
@@ -186,6 +176,16 @@ img.lazyload:not([src]) {
         height: auto;
         overflow: hidden;
     }
+}
+
+
+.parsley-errors-list {
+    font-size: 10px;
+    margin-top: 10px;
+    color: var(--primary-color);
+    font-family: var(--aqum);
+    line-height: 1.4;
+    text-transform: uppercase;
 }
 
 ::selection {
