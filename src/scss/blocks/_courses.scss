@@ -3,7 +3,22 @@
 
     @include breakpoint(small-mobile) {
         margin-bottom: 5.2rem;
-        background-color: var(--primary-color);
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: '';
+            position: absolute;
+            left: calc((100vw - 100%) / 2 * -1);
+            width: 100vw;
+            height: 100%;
+            top: 0;
+            background-color: var(--primary-color);
+            z-index: -1;
+        }
+
+
+       
+        
     }
 }
 
@@ -30,6 +45,8 @@
         @include breakpoint(small-mobile) {
             width: 30.8rem;
         }
+
+       
     }
 
     .swiper-container {
@@ -143,7 +160,7 @@
 .courses__top-slider-card {
     position: relative;
     display: flex;
-    background-color: white;
+   
     z-index: 1;
     flex-grow: 1;
     overflow: hidden;

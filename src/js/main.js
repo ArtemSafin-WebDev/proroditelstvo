@@ -7,6 +7,7 @@ import videoTabs from './videoTabs';
 import storiesSliders from './storiesSlider';
 import burgerMenu from './burgerMenu';
 import forms from './forms';
+import showAll from './showAll';
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     videoTabs();
     storiesSliders();
     forms();
+    showAll();
 });
 
 window.addEventListener('load', function() {

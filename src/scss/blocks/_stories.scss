@@ -1,11 +1,9 @@
-
 .stories {
     margin-bottom: 9rem;
     @include breakpoint(small-mobile) {
         margin-bottom: 3.3rem;
     }
 }
-
 
 .stories__heading {
     display: flex;
@@ -22,7 +20,6 @@
     }
 }
 
-
 .stories__heading-link {
     color: var(--primary-color);
     font-size: 1.4rem;
@@ -30,26 +27,23 @@
     font-weight: 700;
     margin-left: 1.7rem;
     text-transform: uppercase;
-    transition: color .2s;
+    transition: color 0.2s;
 
     @include breakpoint(small-mobile) {
         font-size: 1.2rem;
         margin-left: 0.6rem;
         position: relative;
-        top: -.3rem;
+        top: -0.3rem;
     }
     &:link,
     &:visited {
         color: var(--primary-color);
     }
 
-
     &:hover {
         color: var(--text-color);
     }
 }
-
-
 
 .stories__content {
     .swiper-container {
@@ -57,7 +51,6 @@
         padding: 2rem;
         overflow: visible;
     }
-
 
     .swiper-wrapper {
         @include breakpointMF(small-tablet) {
@@ -86,13 +79,12 @@
 .stories__card {
     color: white;
     transform: translateZ(0);
-    transition: transform .4s;
+    transition: transform 0.4s;
     position: relative;
     &:link,
     &:visited {
         color: white;
     }
-
 
     &:hover {
         transform: translateZ(0) scale(1.03);
@@ -101,7 +93,7 @@
 
 .stories__card-image-container {
     display: flex;
-    background-color: var(--text-color);
+   
     color: white;
     margin-bottom: 2rem;
     position: relative;
@@ -122,21 +114,17 @@
     }
 }
 
-
 .stories__card-image-container-content {
     display: inline-flex;
     width: 100%;
     flex-grow: 1;
     flex-direction: column;
-    
+
     padding: 2.4rem;
     justify-content: flex-end;
     position: relative;
     z-index: 40;
-
-   
 }
-
 
 .stories__card-image {
     position: absolute;
@@ -158,8 +146,6 @@
     background: linear-gradient(360deg, #000000 -36.82%, rgba(0, 0, 0, 0) 50%);
 }
 
-
-
 .stories__card-title {
     font-size: 1.6rem;
     line-height: 2.1rem;
@@ -168,39 +154,40 @@
 
     @include breakpoint(small-mobile) {
         font-size: 1.5rem;
-        
     }
 }
-
 
 .stories__card-info-row {
     display: flex;
     align-items: center;
 }
 
-
 .stories__card-tag {
     background-color: #fff;
     color: var(--text-color);
-    
+
     text-align: center;
     font-size: 1rem;
-    padding: .5rem 1.4rem;
+    padding: 0.5rem 1.4rem;
     line-height: 1.4rem;
     text-transform: uppercase;
-    letter-spacing: .08em;
+    letter-spacing: 0.08em;
     margin-right: 1rem;
-
-    @include breakpoint(small-mobile) {
-        font-size: 1rem;
-        padding: .5rem 1.4rem;
-    }
     &:link,
     &:visited {
         color: var(--text-color);
     }
-}
 
+    .stories__card--purple & {
+        background-color: var(--primary-color);
+        color: white;
+    }
+
+    @include breakpoint(small-mobile) {
+        font-size: 1rem;
+        padding: 0.5rem 1.4rem;
+    }
+}
 
 .stories__card-date {
     margin-left: auto;
@@ -209,10 +196,11 @@
     line-height: 1.7rem;
     margin-right: 1rem;
     font-family: var(--ping-fang);
+
+    .stories__card--purple & {
+        color: #a8a8a8;
+    }
 }
-
-
-
 
 .stories__card-views-count {
     display: flex;
@@ -227,10 +215,16 @@
         height: 0.9rem;
         fill: white;
         flex-shrink: 0;
-        margin-right: .35rem;
+        margin-right: 0.35rem;
+    }
+
+    .stories__card--purple & {
+        color: #a8a8a8;
+        svg {
+            fill: #a8a8a8;
+        }
     }
 }
-
 
 .stories__card-likes-count {
     display: flex;
@@ -245,6 +239,13 @@
         height: 1.2rem;
         fill: white;
         flex-shrink: 0;
-        margin-right: .35rem;
+        margin-right: 0.35rem;
+    }
+
+    .stories__card--purple & {
+        color: #a8a8a8;
+        svg {
+            fill: #a8a8a8;
+        }
     }
 }
