@@ -9,7 +9,7 @@
         </script>
         <link rel="stylesheet" href="css/styles.min.css" />
         <title>
-            Sitemap
+            Home Page
         </title>
     </head>
     <body class="no-touch" ontouchstart="">
@@ -121,14 +121,14 @@
         </div>
 
         <div class="page-content">
-            <header class="page-header ">
+            <header class="page-header  page-header--dark ">
                 <div class="page-header__bg">
-                    <img src="img/header-cemicircle.svg" alt="" class="page-header__bg-image" />
+                    <img src="img/header-cemicircle-grey.svg" alt="" class="page-header__bg-image" />
                 </div>
                 <div class="container">
                     <div class="page-header__row">
                         <a href="index.html" class="page-header__logo">
-                            <img src="img/logo.svg" alt="Логотип" width="324" class="page-header__logo-image" />
+                            <img src="img/logo-violet.svg" alt="Логотип" width="324" class="page-header__logo-image" />
                         </a>
 
                         <div class="page-header__navigation">
@@ -227,58 +227,151 @@
                 </div>
             </header>
             <main class="page-main">
-                <style>
-                    .filelist {
-                        max-width: 600px;
-                        margin-top: 50px;
-                    }
-                    .filelist__item {
-                        margin-bottom: 20px;
-                    }
+                <section class="about">
+                    <div class="container">
+                        <h1 class="about__main-heading">
+                            О проекте
+                        </h1>
 
-                    .filelist__link:link,
-                    .filelist__link:visited {
-                        display: block;
-                        color: white;
-                        background-color: yellowgreen;
-                        padding: 20px;
-                    }
-                </style>
+                        <div class="about__content text__article-content">
+                            <div class="text__article-picture-with-text">
+                                <p class="text__article-picture-with-text-paragraph">
+                                    В нашей семье подарки – это священная тема. Мой сын в четыре с половиной года не расскажет стишок на английском, не знает всех букв алфавита, не нарисует лицо в деталях, но зато он дарит подарки.
+                                </p>
+                            </div>
+                            <img src="img/about-image.jpg" alt="" />
+                            <p>
+                                Когда он слышит слово «праздник», он интересуется, что мы подарим и кому. Открытки «сделай сам», пироги в подарок, цветы, что угодно.
+                            </p>
 
-                <div id="sitemap"></div>
+                            <p>
+                                В два года его уже знали во всех цветочных киосках в округе. Он тащил туда папу с напором танка и кричал «маме цветы». Гордый папа ждал, пока ребенок выберет любимые мои хризантемы и гордо платил. Я сияла, когда из-за
+                                стеклянных витрин мне улыбались продавцы цветов, узнавшие моего сына.
+                            </p>
+                        </div>
 
-                <script>
-                    (async () => {
-                        const sitemap = document.querySelector('#sitemap');
-                        const filelist = await fetch('filelist.json');
+                        <div class="how-to-not-skip">
+                            <h2 class="how-to-not-skip__heading">
+                                Как ничего не пропустить
+                            </h2>
+                            <ul class="how-to-not-skip__list">
+                                <li class="how-to-not-skip__list-item">
+                                    <a href="#" class="how-to-not-skip__link">
+                                        <div class="how-to-not-skip__link-icon-container">
+                                            <img src="img/instagram.svg" alt="" class="how-to-not-skip__link-icon" />
+                                        </div>
+                                        <div class="how-to-not-skip__link-count">
+                                            <svg width="20" height="23" aria-hidden="true" class="icon-person">
+                                                <use xlink:href="#person" />
+                                            </svg>
+                                            150 000
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="how-to-not-skip__list-item">
+                                    <a href="#" class="how-to-not-skip__link">
+                                        <div class="how-to-not-skip__link-icon-container">
+                                            <img src="img/telegram.svg" alt="" class="how-to-not-skip__link-icon" />
+                                        </div>
+                                        <div class="how-to-not-skip__link-count">
+                                            <svg width="20" height="23" aria-hidden="true" class="icon-person">
+                                                <use xlink:href="#person" />
+                                            </svg>
+                                            150 000
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="how-to-not-skip__list-item">
+                                    <a href="#" class="how-to-not-skip__link">
+                                        <div class="how-to-not-skip__link-icon-container">
+                                            <img src="img/facebook.svg" alt="" class="how-to-not-skip__link-icon" />
+                                        </div>
+                                        <div class="how-to-not-skip__link-count">
+                                            <svg width="20" height="23" aria-hidden="true" class="icon-person">
+                                                <use xlink:href="#person" />
+                                            </svg>
+                                            150 000
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="how-to-not-skip__list-item">
+                                    <a href="#" class="how-to-not-skip__link">
+                                        <div class="how-to-not-skip__link-icon-container">
+                                            <img src="img/youtube.svg" alt="" class="how-to-not-skip__link-icon" />
+                                        </div>
+                                        <div class="how-to-not-skip__link-count">
+                                            <svg width="20" height="23" aria-hidden="true" class="icon-person">
+                                                <use xlink:href="#person" />
+                                            </svg>
+                                            150 000
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="how-to-not-skip__list-item">
+                                    <a href="#" class="how-to-not-skip__link">
+                                        <div class="how-to-not-skip__link-icon-container">
+                                            <img src="img/vk.svg" alt="" class="how-to-not-skip__link-icon" />
+                                        </div>
+                                        <div class="how-to-not-skip__link-count">
+                                            <svg width="20" height="23" aria-hidden="true" class="icon-person">
+                                                <use xlink:href="#person" />
+                                            </svg>
+                                            150 000
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
-                        if (!filelist.ok) {
-                            sitemap.textContent = 'Error happened';
-                            sitemap.style.color = 'red';
-                            return;
-                        }
-                        let filelistParsed = await filelist.json();
+                        <div class="about__content text__article-content">
+                            <p>
+                                Когда он слышит слово «праздник», он интересуется, что мы подарим и кому. Открытки «сделай сам», пироги в подарок, цветы, что угодно.
+                            </p>
 
-                        filelistParsed = filelistParsed.filter(element => element !== 'sitemap.html');
+                            <p>
+                                В два года его уже знали во всех цветочных киосках в округе. Он тащил туда папу с напором танка и кричал «маме цветы». Гордый папа ждал, пока ребенок выберет любимые мои хризантемы и гордо платил. Я сияла, когда из-за
+                                стеклянных витрин мне улыбались продавцы цветов, узнавшие моего сына.
+                            </p>
+                            <p>
+                                Ребенка полагается «развивать». Водить его по музеям, специальным занятиям, выставкам, давать ему бассейн, конный спорт, скрипку в руки и коньки на ноги. Мы не от мира сего, мы живем без конного спорта.
+                            </p>
+                            <p>
+                                Но мои дети рефлекторно при слове «гости» смотрят туда, где хранится мука, потому что мы печем торты в подарок.
+                            </p>
+                        </div>
+                    </div>
+                </section>
 
-                        const ul = document.createElement('ul');
-                        ul.className = 'filelist';
-
-                        filelistParsed.forEach(item => {
-                            const filelistItem = document.createElement('li');
-                            filelistItem.className = 'filelist__item';
-                            const filelistLink = document.createElement('a');
-                            filelistLink.className = 'filelist__link';
-                            filelistLink.href = item;
-                            filelistLink.textContent = item;
-                            filelistLink.target = '_blank';
-                            filelistItem.appendChild(filelistLink);
-                            ul.appendChild(filelistItem);
-                        });
-
-                        sitemap.appendChild(ul);
-                    })();
-                </script>
+                <section class="write-us">
+                    <div class="container">
+                        <div class="write-us__row">
+                            <div class="write-us-left-col">
+                                <h3 class="write-us__heading">
+                                    Напишите нам
+                                </h3>
+                                <form action="/" method="POST" class="write-us__form" data-parsley-validate>
+                                    <div class="write-us__form-row">
+                                        <input type="text" class="write-us__input" placeholder="Имя" required />
+                                    </div>
+                                    <div class="write-us__form-row">
+                                        <input type="tel" name="phone" class="write-us__input js-phone-input" placeholder="Телефон" required />
+                                    </div>
+                                    <div class="write-us__form-row write-us__form-row--fullwidth">
+                                        <textarea name="message" class="write-us__textarea" placeholder="Сообщение" required></textarea>
+                                    </div>
+                                    <div class="write-us__submit-wrapper">
+                                        <button type="submit" class="write-us__form-submit">
+                                            Написать
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="write-us-right-col">
+                                <img src="img/write-us.jpg" alt="" class="write-us__image" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
             <footer class="page-footer">
                 <div class="page-footer__bg">

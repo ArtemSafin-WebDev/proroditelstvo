@@ -8,6 +8,8 @@ import storiesSliders from './storiesSlider';
 import burgerMenu from './burgerMenu';
 import forms from './forms';
 import showAll from './showAll';
+import '@fancyapps/fancybox';
+import videoModals from './videoModals';
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -21,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     storiesSliders();
     forms();
     showAll();
+    videoModals();
 });
 
 window.addEventListener('load', function() {
