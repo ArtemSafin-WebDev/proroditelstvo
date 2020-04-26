@@ -13,6 +13,7 @@ export default function() {
             slidesPerView: 3,
             spaceBetween: 30,
             watchOverflow: true,
+            loop: true,
             navigation: {
                 nextEl: element.querySelector('.card-slider__desktop-arrow--next'),
                 prevEl: element.querySelector('.card-slider__desktop-arrow--prev')

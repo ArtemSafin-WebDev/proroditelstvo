@@ -16,7 +16,7 @@
     display: flex;
     padding: 3.6rem 4rem;
     padding-left: 4.5rem;
-    border-bottom: 2px solid var(--text-color);
+    border-bottom: 3px solid var(--text-color);
     background-color: #fff;
     margin-bottom: 9rem;
     @include breakpoint(small-mobile) {
@@ -34,7 +34,7 @@
         fill: var(--primary-color);
         flex-shrink: 0;
         display: block;
-        transition: color .2s;
+        transition: fill .2s;
 
         @include breakpoint(small-mobile) {
             width: 3rem;
@@ -63,7 +63,14 @@
     padding-right: 2rem;
 
     @include placeholder {
-        color: #A8A8A8;
+        color: var(--text-color);
+    }
+
+
+    &--light-placeholder {
+        @include placeholder {
+            color: #E5E5E5;
+        }
     }
 
 

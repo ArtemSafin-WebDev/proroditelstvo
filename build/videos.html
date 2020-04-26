@@ -18,6 +18,7 @@
                 <symbol viewBox="0 0 28.41 46" id="arrow-left" xmlns="http://www.w3.org/2000/svg"><path d="M28.41 5.4L10.85 23l17.56 17.6L23 46 0 23 23 0z" /></symbol>
                 <symbol viewBox="0 0 27.79 45" id="arrow-right" xmlns="http://www.w3.org/2000/svg"><path d="M0 39.71L17.17 22.5 0 5.29 5.29 0l22.5 22.5L5.29 45z" /></symbol>
                 <symbol viewBox="0 0 15.84 15.84" id="back" xmlns="http://www.w3.org/2000/svg"><path d="M15.84 6.92v2h-12l5.5 5.5-1.42 1.42L0 7.92 7.92 0l1.42 1.42-5.5 5.5z" /></symbol>
+                <symbol viewBox="0 0 47.78 47.78" id="cross" xmlns="http://www.w3.org/2000/svg"><path d="M4.94 0l19 19L42.48.43l4.94 4.94-18.55 18.56 18.91 18.91-4.94 4.94-18.91-18.91L5.37 47.42.43 42.48 19 23.93 0 4.94z" /></symbol>
                 <symbol viewBox="0 0 27.75 4.63" id="dots" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2.31 0a2.31 2.31 0 102.31 2.31A2.3 2.3 0 002.31 0zm11.57 0a2.31 2.31 0 102.31 2.31A2.31 2.31 0 0013.88 0zm11.56 0a2.31 2.31 0 102.31 2.31A2.31 2.31 0 0025.44 0z" />
                 </symbol>
@@ -143,7 +144,7 @@
                                     <a href="#" class="page-header__nav-link">
                                         Видео
                                     </a>
-                                    <a href="#" class="page-header__nav-link">
+                                    <a href="#" class="page-header__nav-link active">
                                         Истории
                                     </a>
                                     <a href="#" class="page-header__nav-link">
@@ -176,7 +177,7 @@
                                         </div>
                                     </div>
 
-                                    <a href="#" class="page-header__search-link">
+                                    <a href="#" class="page-header__search-link js-search-modal-open">
                                         <svg width="28" height="6" aria-hidden="true" class="icon-search">
                                             <use xlink:href="#search" />
                                         </svg>
@@ -214,7 +215,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="page-header__mobile-search-link">
+                        <a href="#" class="page-header__mobile-search-link js-search-modal-open">
                             <svg width="28" height="6" aria-hidden="true" class="icon-search">
                                 <use xlink:href="#search" />
                             </svg>
@@ -226,6 +227,28 @@
                                 <span></span>
                             </span>
                         </button>
+                    </div>
+                </div>
+                <div class="page-header__search-modal">
+                    <div class="container">
+                        <div class="page-header__search-modal-content">
+                            <img src="img/clouds.svg" alt="" class="page-header__search-clouds" />
+                            <button class="page-header__search-modal-close js-search-modal-close">
+                                <svg width="60" height="60" aria-hidden="true" class="icon-cross">
+                                    <use xlink:href="#cross" />
+                                </svg>
+                            </button>
+                            <form action="/" method="GET" class="search__form">
+                                <input type="search" name="q" class="search__form-input search__form-input--light-placeholder" placeholder="Что ищем?" />
+
+                                <button type="submit" class="search__form-submit">
+                                    <svg width="62" height="62" aria-hidden="true" class="icon-search">
+                                        <use xlink:href="#search-thin" />
+                                    </svg>
+                                </button>
+                            </form>
+                            <img src="img/search-girl.png" alt="" class="page-header__search-girl" />
+                        </div>
                     </div>
                 </div>
             </header>

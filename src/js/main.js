@@ -13,6 +13,7 @@ import videoModals from './videoModals';
 import tabs from './tabs';
 
 
+
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
     detectTouch();
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     showAll();
     videoModals();
     tabs();
+    
 });
 
 window.addEventListener('load', function() {
