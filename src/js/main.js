@@ -10,6 +10,7 @@ import forms from './forms';
 import showAll from './showAll';
 import '@fancyapps/fancybox';
 import videoModals from './videoModals';
+import tabs from './tabs';
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     forms();
     showAll();
     videoModals();
+    tabs();
 });
 
 window.addEventListener('load', function() {
