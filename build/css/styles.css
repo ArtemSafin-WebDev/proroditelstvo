@@ -1478,10 +1478,11 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 10px;
+  font-size: 9px;
   -webkit-tap-highlight-color: transparent; }
   @media only screen and (max-width: 1600px) {
     html {
-      font-size: 8px; } }
+      font-size: 7px; } }
   @media only screen and (max-width: 1024px) {
     html {
       font-size: 6px; } }
