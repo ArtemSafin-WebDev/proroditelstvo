@@ -126,14 +126,14 @@
         </div>
 
         <div class="page-content">
-            <header class="page-header ">
+            <header class="page-header  page-header--dark ">
                 <div class="page-header__bg">
-                    <img src="img/header-cemicircle.svg" alt="" class="page-header__bg-image" />
+                    <img src="img/header-cemicircle-grey.svg" alt="" class="page-header__bg-image" />
                 </div>
                 <div class="container">
                     <div class="page-header__row">
                         <a href="index.html" class="page-header__logo">
-                            <img src="img/logo.svg" alt="Логотип" width="324" class="page-header__logo-image" />
+                            <img src="img/logo-violet.svg" alt="Логотип" width="324" class="page-header__logo-image" />
                         </a>
 
                         <div class="page-header__navigation">
@@ -254,72 +254,113 @@
                 </div>
             </header>
             <main class="page-main">
-                <section class="card-slider">
+                <section class="card-slider card-slider--articles">
                     <div class="container">
+                        <h2 class="card-slider__heading">
+                            Статьи
+                        </h2>
                         <div class="card-slider__desktop js-desktop-card-slider">
-                            <button class="card-slider__desktop-arrow card-slider__desktop-arrow--prev">
+                            <button class="card-slider__desktop-arrow card-slider__desktop-arrow--violet card-slider__desktop-arrow--prev">
                                 <svg width="16" height="24" aria-hidden="true" class="icon-slider-arrow-left">
                                     <use xlink:href="#slider-arrow-left" />
                                 </svg>
                             </button>
-                            <button class="card-slider__desktop-arrow card-slider__desktop-arrow--next">
+                            <button class="card-slider__desktop-arrow card-slider__desktop-arrow--violet card-slider__desktop-arrow--next">
                                 <svg width="16" height="24" aria-hidden="true" class="icon-slider-arrow-right">
                                     <use xlink:href="#slider-arrow-right" />
                                 </svg>
                             </button>
-                            <div class="card-slider__label">
+                            <div class="card-slider__label card-slider__label--violet">
                                 Свежее
                             </div>
                             <div class="swiper-container">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <a href="#" class="card-slider__card">
-                                            <img src="img/card-slider/image-1.jpg" alt="" class="card-slider__card-image" />
-                                            <div class="card-slider__card-content">
-                                                <span class="card-slider__card-tag">
-                                                    статья
+                                        <a href="#" class="articles__card">
+                                            <div class="articles__card-image-container">
+                                                <img src="img/articles/image-1.jpg" alt="Изображение статьи" class="articles__card-image" />
+                                            </div>
+                                            <h4 class="articles__card-name articles__card-name--large">
+                                                Синдром ионы или сказ о том, как не зарыть талант в землю
+                                            </h4>
+                                            <div class="articles__card-info-row">
+                                                <span class="articles__card-tag">
+                                                    Психология
+                                                </span>
+                                                <span class="articles__card-date">
+                                                    15 июня
+                                                </span>
+                                                <span class="articles__card-views-count">
+                                                    <svg width="12" height="6" aria-hidden="true" class="icon-eye">
+                                                        <use xlink:href="#eye" />
+                                                    </svg>
+                                                    3k
+                                                </span>
+                                                <span class="articles__card-likes-count">
+                                                    <svg width="12" height="10" aria-hidden="true" class="icon-heart">
+                                                        <use xlink:href="#heart" />
+                                                    </svg>
+                                                    278
                                                 </span>
                                             </div>
                                         </a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox class="card-slider__card">
-                                            <img src="img/card-slider/image-2.jpg" alt="" class="card-slider__card-image" />
-                                            <svg width="86" height="86" aria-hidden="true" class="icon-play card-slider__card-play">
-                                                <use xlink:href="#play" />
-                                            </svg>
-                                            <div class="card-slider__card-content">
-                                                <span class="card-slider__card-tag">
-                                                    видео
+                                        <a href="#" class="articles__card">
+                                            <div class="articles__card-image-container">
+                                                <img src="img/articles/image-2.jpg" alt="Изображение статьи" class="articles__card-image" />
+                                            </div>
+                                            <h4 class="articles__card-name articles__card-name--large">
+                                                Синдром ионы или сказ о том, как не зарыть талант в землю
+                                            </h4>
+                                            <div class="articles__card-info-row">
+                                                <span class="articles__card-tag">
+                                                    Психология
                                                 </span>
-                                                <h5 class="card-slider__card-title">
-                                                    Ребёнок, который привык, что его не кушают
-                                                </h5>
+                                                <span class="articles__card-date">
+                                                    15 июня
+                                                </span>
+                                                <span class="articles__card-views-count">
+                                                    <svg width="12" height="6" aria-hidden="true" class="icon-eye">
+                                                        <use xlink:href="#eye" />
+                                                    </svg>
+                                                    3k
+                                                </span>
+                                                <span class="articles__card-likes-count">
+                                                    <svg width="12" height="10" aria-hidden="true" class="icon-heart">
+                                                        <use xlink:href="#heart" />
+                                                    </svg>
+                                                    278
+                                                </span>
                                             </div>
                                         </a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="#" class="card-slider__card">
-                                            <img src="img/card-slider/image-3.jpg" alt="" class="card-slider__card-image" />
-                                            <div class="card-slider__card-content">
-                                                <span class="card-slider__date">
-                                                    C 15 февраля
-                                                </span>
-                                                <span class="card-slider__card-tag">
-                                                    курс
-                                                </span>
-                                                <h5 class="card-slider__card-title">
-                                                    Мама и деньги
-                                                </h5>
+                                        <a href="#" class="articles__card">
+                                            <div class="articles__card-image-container">
+                                                <img src="img/articles/image-3.jpg" alt="Изображение статьи" class="articles__card-image" />
                                             </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="card-slider__card">
-                                            <img src="img/card-slider/image-1.jpg" alt="" class="card-slider__card-image" />
-                                            <div class="card-slider__card-content">
-                                                <span class="card-slider__card-tag">
-                                                    статья
+                                            <h4 class="articles__card-name articles__card-name--large">
+                                                Синдром ионы или сказ о том, как не зарыть талант в землю
+                                            </h4>
+                                            <div class="articles__card-info-row">
+                                                <span class="articles__card-tag">
+                                                    Психология
+                                                </span>
+                                                <span class="articles__card-date">
+                                                    15 июня
+                                                </span>
+                                                <span class="articles__card-views-count">
+                                                    <svg width="12" height="6" aria-hidden="true" class="icon-eye">
+                                                        <use xlink:href="#eye" />
+                                                    </svg>
+                                                    3k
+                                                </span>
+                                                <span class="articles__card-likes-count">
+                                                    <svg width="12" height="10" aria-hidden="true" class="icon-heart">
+                                                        <use xlink:href="#heart" />
+                                                    </svg>
+                                                    278
                                                 </span>
                                             </div>
                                         </a>
@@ -334,8 +375,8 @@
                                 </svg>
                             </button>
 
-                            <div class="card-slider__label">
-                                Свежее
+                            <div class="card-slider__label card-slider__label--violet">
+                                Новое
                             </div>
                             <div class="card-slider__mobile-slider-container">
                                 <div class="card-slider__mobile-slider-slide">
@@ -351,16 +392,10 @@
                                 <div class="card-slider__mobile-slider-slide">
                                     <a href="#" class="card-slider__card">
                                         <img src="img/card-slider/image-2.jpg" alt="" class="card-slider__card-image" />
-                                        <svg width="86" height="86" aria-hidden="true" class="icon-play card-slider__card-play">
-                                            <use xlink:href="#play" />
-                                        </svg>
                                         <div class="card-slider__card-content">
                                             <span class="card-slider__card-tag">
-                                                видео
+                                                статья
                                             </span>
-                                            <h5 class="card-slider__card-title">
-                                                Ребёнок, который привык, что его не кушают
-                                            </h5>
                                         </div>
                                     </a>
                                 </div>
@@ -368,15 +403,9 @@
                                     <a href="#" class="card-slider__card">
                                         <img src="img/card-slider/image-3.jpg" alt="" class="card-slider__card-image" />
                                         <div class="card-slider__card-content">
-                                            <span class="card-slider__date">
-                                                C 15 февраля
-                                            </span>
                                             <span class="card-slider__card-tag">
-                                                курс
+                                                статья
                                             </span>
-                                            <h5 class="card-slider__card-title">
-                                                Мама и деньги
-                                            </h5>
                                         </div>
                                     </a>
                                 </div>
@@ -391,34 +420,11 @@
                     </div>
                 </section>
 
-                <section class="webinar">
+                <section class="articles articles--all-articles">
                     <div class="container">
-                        <div class="webinar__content">
-                            <div class="webinar__date">
-                                16 февраля в 19:00
-                            </div>
-                            <h4 class="webinar__name">
-                                Синдром ионы или сказ о том, как не зарыть талант в землю
-                            </h4>
-                            <div class="webinar__subscribe">
-                                <img src="img/webinar-girl.png" alt="Картинка к вебинару" class="webinar__image" />
-                                <p class="webinar__author">
-                                    Открытый вебинар Аглаи Датешидзе
-                                </p>
-                                <a href="#" class="webinar__subscribe-link">
-                                    Записаться
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="articles">
-                    <div class="container">
-                        <div class="articles__label-wrapper">
-                            <div class="articles__label">
-                                Статьи
-                            </div>
-                        </div>
+                        <h2 class="articles__heading">
+                            Все статьи
+                        </h2>
                         <div class="articles__navigation-wrapper">
                             <div class="articles__navigation">
                                 <a href="#" class="articles__navigation-link">
@@ -591,28 +597,6 @@
                                                     </span>
                                                 </div>
                                             </a>
-                                        </li>
-                                        <li class="articles__list-item articles__list-item--fullwidth articles__list-item--subscribe">
-                                            <div class="articles__subscription-card">
-                                                <div class="articles__subscription-card-content">
-                                                    <h4 class="articles__subscription-card-title">
-                                                        Получайте полезные статьи на емайл
-                                                    </h4>
-                                                    <form action="/" method="POST" class="articles__subscription-card-form" data-parsley-validate>
-                                                        <div class="articles__subscription-card-form-row">
-                                                            <div class="articles__subscription-card-form-input-wrapper">
-                                                                <input type="email" name="email" class="articles__subscription-card-form-input" placeholder="Электронная почта" required />
-                                                            </div>
-                                                            <button type="submit" class="articles__subscription-card-form-submit">
-                                                                Подписаться
-                                                            </button>
-                                                        </div>
-                                                        <p class="articles__subscription-card-form-policy">
-                                                            Подписываясь, вы соглашаетесь с политикой конфиденциальности.
-                                                        </p>
-                                                    </form>
-                                                </div>
-                                            </div>
                                         </li>
 
                                         <li class="articles__list-item">
@@ -795,6 +779,97 @@
                                                 </div>
                                             </a>
                                         </li>
+
+                                        <li class="articles__list-item">
+                                            <a href="#" class="articles__card">
+                                                <div class="articles__card-image-container">
+                                                    <img src="img/articles/image-1.jpg" alt="Изображение статьи" class="articles__card-image" />
+                                                </div>
+                                                <h4 class="articles__card-name">
+                                                    Ребёнок, который привык, что его не слушаю
+                                                </h4>
+                                                <div class="articles__card-info-row">
+                                                    <span class="articles__card-tag">
+                                                        Психология
+                                                    </span>
+                                                    <span class="articles__card-date">
+                                                        15 июня
+                                                    </span>
+                                                    <span class="articles__card-views-count">
+                                                        <svg width="12" height="6" aria-hidden="true" class="icon-eye">
+                                                            <use xlink:href="#eye" />
+                                                        </svg>
+                                                        3k
+                                                    </span>
+                                                    <span class="articles__card-likes-count">
+                                                        <svg width="12" height="10" aria-hidden="true" class="icon-heart">
+                                                            <use xlink:href="#heart" />
+                                                        </svg>
+                                                        278
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="articles__list-item">
+                                            <a href="#" class="articles__card">
+                                                <div class="articles__card-image-container">
+                                                    <img src="img/articles/image-2.jpg" alt="Изображение статьи" class="articles__card-image" />
+                                                </div>
+                                                <h4 class="articles__card-name">
+                                                    Ребёнок, который привык, что его не слушаю
+                                                </h4>
+                                                <div class="articles__card-info-row">
+                                                    <span class="articles__card-tag">
+                                                        Психология
+                                                    </span>
+                                                    <span class="articles__card-date">
+                                                        15 июня
+                                                    </span>
+                                                    <span class="articles__card-views-count">
+                                                        <svg width="12" height="6" aria-hidden="true" class="icon-eye">
+                                                            <use xlink:href="#eye" />
+                                                        </svg>
+                                                        3k
+                                                    </span>
+                                                    <span class="articles__card-likes-count">
+                                                        <svg width="12" height="10" aria-hidden="true" class="icon-heart">
+                                                            <use xlink:href="#heart" />
+                                                        </svg>
+                                                        278
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="articles__list-item">
+                                            <a href="#" class="articles__card">
+                                                <div class="articles__card-image-container">
+                                                    <img src="img/articles/image-3.jpg" alt="Изображение статьи" class="articles__card-image" />
+                                                </div>
+                                                <h4 class="articles__card-name">
+                                                    Синдром ионы или сказ о том, как не зарыть талант в землю
+                                                </h4>
+                                                <div class="articles__card-info-row">
+                                                    <span class="articles__card-tag">
+                                                        Психология
+                                                    </span>
+                                                    <span class="articles__card-date">
+                                                        15 июня
+                                                    </span>
+                                                    <span class="articles__card-views-count">
+                                                        <svg width="12" height="6" aria-hidden="true" class="icon-eye">
+                                                            <use xlink:href="#eye" />
+                                                        </svg>
+                                                        3k
+                                                    </span>
+                                                    <span class="articles__card-likes-count">
+                                                        <svg width="12" height="10" aria-hidden="true" class="icon-heart">
+                                                            <use xlink:href="#heart" />
+                                                        </svg>
+                                                        278
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </li>
                                     </ul>
                                     <a href="#" class="articles__load-more">
                                         Показать еще
@@ -945,367 +1020,6 @@
                                             </a>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="psycho">
-                    <div class="container">
-                        <div class="psycho__row">
-                            <div class="psycho__content">
-                                <h3 class="psycho__title">
-                                    Запишитесь на консультацию к психологу
-                                </h3>
-                                <p class="psycho__description">
-                                    или сказ о том, как не зарыть талант в землю
-                                </p>
-                                <form action="/" method="POST" class="psycho__form" data-parsley-validate>
-                                    <div class="psycho__form-group">
-                                        <input type="text" name="name" class="psycho__form-input" placeholder="Имя" required />
-                                    </div>
-                                    <div class="psycho__form-group">
-                                        <input type="tel" name="name" class="psycho__form-input js-phone-input" placeholder="Телефон" required data-parsley-phone />
-                                    </div>
-                                    <button class="psycho__form-submit">
-                                        Записаться
-                                    </button>
-                                </form>
-                            </div>
-                            <img src="img/psycho.png" alt="" class="psycho__image" />
-                        </div>
-                    </div>
-                </section>
-                <section class="courses">
-                    <div class="container">
-                        <div class="courses__content">
-                            <div class="courses__top-slider js-courses-top-slider">
-                                <div class="courses__top-slider-row">
-                                    <h3 class="courses__top-slider-heading">
-                                        Курсы
-                                        <a href="" class="courses__top-slider-heading-link">
-                                            смотреть все
-                                        </a>
-                                    </h3>
-                                    <div class="courses__top-slider-arrows">
-                                        <button class="courses__top-slider-arrow courses__top-slider-arrow--prev">
-                                            <svg width="20" height="34" aria-hidden="true" class="icon-arrow-left">
-                                                <use xlink:href="#arrow-left" />
-                                            </svg>
-                                        </button>
-                                        <button class="courses__top-slider-arrow courses__top-slider-arrow--next">
-                                            <svg width="20" height="34" aria-hidden="true" class="icon-arrow-right">
-                                                <use xlink:href="#arrow-right" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <a href="#" class="courses__top-slider-card">
-                                                <img src="img/courses/image-1.jpg" alt="" class="courses__top-slider-card-image" />
-                                                <div class="courses__top-slider-card-content">
-                                                    <div class="courses__top-slider-card-text">
-                                                        <h4 class="courses__top-slider-card-title">
-                                                            Ребёнок, который привык, что его не слушаю
-                                                        </h4>
-                                                        <span class="courses__top-slider-card-tag">
-                                                            психология
-                                                        </span>
-
-                                                        <p class="courses__top-slider-card-description">
-                                                            4 недели, после которых ваши отношения с деньгами станут лучше, а мечты начнут исполняться
-                                                        </p>
-                                                        <span class="courses__top-slider-card-start-date">
-                                                            с 15 апреля
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="#" class="courses__top-slider-card courses__top-slider-card--white-text">
-                                                <img src="img/courses/image-2.jpg" alt="" class="courses__top-slider-card-image" />
-                                                <div class="courses__top-slider-card-content">
-                                                    <div class="courses__top-slider-card-text">
-                                                        <h4 class="courses__top-slider-card-title">
-                                                            Ребёнок, который привык, что его не слушаю
-                                                        </h4>
-                                                        <span class="courses__top-slider-card-tag">
-                                                            психология
-                                                        </span>
-
-                                                        <p class="courses__top-slider-card-description">
-                                                            4 недели, после которых ваши отношения с деньгами станут лучше, а мечты начнут исполняться
-                                                        </p>
-                                                        <span class="courses__top-slider-card-start-date">
-                                                            с 15 апреля
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                            <a href="#" class="courses__top-slider-card">
-                                                <img src="img/courses/image-1.jpg" alt="" class="courses__top-slider-card-image" />
-                                                <div class="courses__top-slider-card-content">
-                                                    <div class="courses__top-slider-card-text">
-                                                        <h4 class="courses__top-slider-card-title">
-                                                            Ребёнок, который привык, что его не слушаю
-                                                        </h4>
-                                                        <span class="courses__top-slider-card-tag">
-                                                            психология
-                                                        </span>
-
-                                                        <p class="courses__top-slider-card-description">
-                                                            4 недели, после которых ваши отношения с деньгами станут лучше, а мечты начнут исполняться
-                                                        </p>
-                                                        <span class="courses__top-slider-card-start-date">
-                                                            с 15 апреля
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="courses__bottom-slider js-courses-bottom-slider">
-                                <div class="courses__bottom-slider-row">
-                                    <h5 class="courses__bottom-slider-heading">
-                                        Распродажа курсов
-                                    </h5>
-
-                                    <div class="courses__bottom-slider-arrows">
-                                        <button class="courses__bottom-slider-arrow courses__bottom-slider-arrow--prev">
-                                            <svg width="16" height="26" aria-hidden="true" class="icon-arrow-left">
-                                                <use xlink:href="#arrow-left" />
-                                            </svg>
-                                        </button>
-                                        <button class="courses__bottom-slider-arrow courses__bottom-slider-arrow--next">
-                                            <svg width="16" height="26" aria-hidden="true" class="icon-arrow-right">
-                                                <use xlink:href="#arrow-right" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <a href="#" class="courses__bottom-slider-card">
-                                                <div class="courses__bottom-slider-card-image-container">
-                                                    <img src="img/courses/image-1.jpg" alt="" class="courses__bottom-slider-card-image" />
-                                                </div>
-
-                                                <h5 class="courses__bottom-slider-card-title">
-                                                    Ребёнок, который привык, что его не слушаю
-                                                </h5>
-                                                <div class="courses__bottom-slider-card-prices">
-                                                    <span class="courses__bottom-slider-card-price-after">
-                                                        9 999 ₽
-                                                    </span>
-                                                    <span class="courses__bottom-slider-card-price-before">
-                                                        13 999 ₽
-                                                    </span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="#" class="courses__bottom-slider-card">
-                                                <div class="courses__bottom-slider-card-image-container">
-                                                    <img src="img/courses/image-2.jpg" alt="" class="courses__bottom-slider-card-image" />
-                                                </div>
-
-                                                <h5 class="courses__bottom-slider-card-title">
-                                                    Ребёнок, который привык, что его не слушаю
-                                                </h5>
-                                                <div class="courses__bottom-slider-card-prices">
-                                                    <span class="courses__bottom-slider-card-price-after">
-                                                        9 999 ₽
-                                                    </span>
-                                                    <span class="courses__bottom-slider-card-price-before">
-                                                        13 999 ₽
-                                                    </span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="#" class="courses__bottom-slider-card">
-                                                <div class="courses__bottom-slider-card-image-container">
-                                                    <img src="img/courses/image-1.jpg" alt="" class="courses__bottom-slider-card-image" />
-                                                </div>
-
-                                                <h5 class="courses__bottom-slider-card-title">
-                                                    Ребёнок, который привык, что его не слушаю
-                                                </h5>
-                                                <div class="courses__bottom-slider-card-prices">
-                                                    <span class="courses__bottom-slider-card-price-after">
-                                                        9 999 ₽
-                                                    </span>
-                                                    <span class="courses__bottom-slider-card-price-before">
-                                                        13 999 ₽
-                                                    </span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="#" class="courses__bottom-slider-card">
-                                                <div class="courses__bottom-slider-card-image-container">
-                                                    <img src="img/courses/image-2.jpg" alt="" class="courses__bottom-slider-card-image" />
-                                                </div>
-
-                                                <h5 class="courses__bottom-slider-card-title">
-                                                    Ребёнок, который привык, что его не слушаю
-                                                </h5>
-                                                <div class="courses__bottom-slider-card-prices">
-                                                    <span class="courses__bottom-slider-card-price-after">
-                                                        9 999 ₽
-                                                    </span>
-                                                    <span class="courses__bottom-slider-card-price-before">
-                                                        13 999 ₽
-                                                    </span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="videos js-video-tabs">
-                    <div class="container">
-                        <h2 class="videos__heading">
-                            Видео
-                            <a href="#" class="videos__heading-link">
-                                Все видео
-                            </a>
-                        </h2>
-                        <div class="videos__content">
-                            <div class="videos__left-col">
-                                <div class="videos__tab-items">
-                                    <div class="videos__tab-item active">
-                                        <a data-fancybox="videoblock" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="videos__card">
-                                            <div class="videos__card-image-container">
-                                                <img src="img/videos/preview.jpg" alt="" class="videos__card-image" />
-
-                                                <svg width="88" height="88" aria-hidden="true" class="icon-play">
-                                                    <use xlink:href="#play" />
-                                                </svg>
-                                            </div>
-
-                                            <div class="videos__card-content">
-                                                <span class="videos__card-tag">
-                                                    новое
-                                                </span>
-                                                <h5 class="videos__card-title">
-                                                    Пока дети маленькие, мантра "дети расту
-                                                </h5>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="videos__tab-item active">
-                                        <a data-fancybox="videoblock" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="videos__card">
-                                            <div class="videos__card-image-container">
-                                                <img src="img/courses/image-1.jpg" alt="" class="videos__card-image" />
-
-                                                <svg width="88" height="88" aria-hidden="true" class="icon-play">
-                                                    <use xlink:href="#play" />
-                                                </svg>
-                                            </div>
-
-                                            <div class="videos__card-content">
-                                                <span class="videos__card-tag">
-                                                    новое
-                                                </span>
-                                                <h5 class="videos__card-title">
-                                                    Пока дети маленькие, мантра "дети расту
-                                                </h5>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="videos__tab-item active">
-                                        <a data-fancybox="videoblock" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="videos__card">
-                                            <div class="videos__card-image-container">
-                                                <img src="img/courses/image-2.jpg" alt="" class="videos__card-image" />
-
-                                                <svg width="88" height="88" aria-hidden="true" class="icon-play">
-                                                    <use xlink:href="#play" />
-                                                </svg>
-                                            </div>
-
-                                            <div class="videos__card-content">
-                                                <span class="videos__card-tag">
-                                                    новое
-                                                </span>
-                                                <h5 class="videos__card-title">
-                                                    Пока дети маленькие, мантра "дети расту
-                                                </h5>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="videos__tab-item active">
-                                        <a data-fancybox="videoblock" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="videos__card">
-                                            <div class="videos__card-image-container">
-                                                <img src="img/videos/preview.jpg" alt="" class="videos__card-image" />
-
-                                                <svg width="88" height="88" aria-hidden="true" class="icon-play">
-                                                    <use xlink:href="#play" />
-                                                </svg>
-                                            </div>
-
-                                            <div class="videos__card-content">
-                                                <span class="videos__card-tag">
-                                                    новое
-                                                </span>
-                                                <h5 class="videos__card-title">
-                                                    Пока дети маленькие, мантра "дети расту
-                                                </h5>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="videos__right-col">
-                                <div class="videos__tabs-nav">
-                                    <a href="#" class="videos__tabs-nav-card">
-                                        <div class="videos__tabs-nav-card-image-container">
-                                            <img src="img/videos/thumb.jpg" alt="" class="videos__tabs-nav-card-image" />
-                                        </div>
-                                        <h5 class="videos__tabs-nav-card-name">
-                                            Пока дети маленькие, мантра "дети расту
-                                        </h5>
-                                    </a>
-                                    <a href="#" class="videos__tabs-nav-card">
-                                        <div class="videos__tabs-nav-card-image-container">
-                                            <img src="img/videos/thumb.jpg" alt="" class="videos__tabs-nav-card-image" />
-                                        </div>
-                                        <h5 class="videos__tabs-nav-card-name">
-                                            Пока дети маленькие, мантра "дети расту
-                                        </h5>
-                                    </a>
-                                    <a href="#" class="videos__tabs-nav-card">
-                                        <div class="videos__tabs-nav-card-image-container">
-                                            <img src="img/videos/thumb.jpg" alt="" class="videos__tabs-nav-card-image" />
-                                        </div>
-                                        <h5 class="videos__tabs-nav-card-name">
-                                            Пока дети маленькие, мантра "дети расту
-                                        </h5>
-                                    </a>
-                                    <a href="#" class="videos__tabs-nav-card">
-                                        <div class="videos__tabs-nav-card-image-container">
-                                            <img src="img/videos/thumb.jpg" alt="" class="videos__tabs-nav-card-image" />
-                                        </div>
-                                        <h5 class="videos__tabs-nav-card-name">
-                                            Пока дети маленькие, мантра "дети расту
-                                        </h5>
-                                    </a>
                                 </div>
                             </div>
                         </div>

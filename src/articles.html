@@ -1,0 +1,9 @@
+{% set title = "Home Page" %}
+{% set activePage = "Home"  %}
+{% set header = "dark"  %}
+{% extends "layout.html" %}
+{% block content %}
+    {% include "blocks/card-slider-articles.html" %}
+    {% include "blocks/all-articles.html" %}
+    {% include "blocks/stories.html" %}
+{% endblock %}
