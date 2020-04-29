@@ -26,10 +26,18 @@
 html {
     box-sizing: border-box;
     font-size: 10px;
-    font-size: 9px;
+    // font-size: 9px;
     @include noHighlight();
+    @include breakpoint(superlarge-desktop) {
+        font-size: 9px;
+    }
+
     @include breakpoint(large-desktop) {
-        font-size: 7px;
+        font-size: 7.5px;
+    }
+
+    @include breakpoint(desktop) {
+        font-size: 7rem;
     }
 
     @include breakpoint(tablet) {
