@@ -37,7 +37,7 @@ html {
     }
 
     @include breakpoint(desktop) {
-        font-size: 7rem;
+        font-size: 7px;
     }
 
     @include breakpoint(tablet) {
