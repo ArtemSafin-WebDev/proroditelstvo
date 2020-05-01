@@ -29,7 +29,6 @@
     }
 }
 
-
 @mixin fullpageBG {
     position: relative;
     background: none;
@@ -134,5 +133,21 @@
         @media only screen and (min-width: 577px) {
             @content;
         }
+    }
+}
+
+@mixin noScrollbar {
+    &::-webkit-scrollbar * {
+        background: transparent;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar {
+        display: none;
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
     }
 }

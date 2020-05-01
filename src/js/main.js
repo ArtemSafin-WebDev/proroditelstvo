@@ -12,6 +12,7 @@ import '@fancyapps/fancybox';
 import videoModals from './videoModals';
 import tabs from './tabs';
 import allCoursesSliders from './allCoursesSliders';
+import gallery from './gallery';
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     videoModals();
     tabs();
     allCoursesSliders();
+    gallery();
 });
 
 window.addEventListener('load', function() {
