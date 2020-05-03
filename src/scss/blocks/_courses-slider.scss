@@ -1,0 +1,6 @@
+.courses-slider {
+    margin-bottom: 7rem;
+    @include breakpoint(small-mobile) {
+        margin-bottom: 3.3rem;
+    }
+}
