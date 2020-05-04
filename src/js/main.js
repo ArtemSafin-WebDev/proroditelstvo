@@ -16,6 +16,7 @@ import gallery from './gallery';
 import booksSlider from './booksSlider';
 import checkList from './checkList';
 import marathonsSliders from './marathonsSlider';
+import countdown from './countdown';
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     booksSlider();
     checkList();
     marathonsSliders();
+    countdown();
 });
 
 window.addEventListener('load', function() {

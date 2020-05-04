@@ -1,20 +1,31 @@
-<header class="page-header {% if header == 'dark' %} page-header--dark {% endif %}">
+<header class="page-header {% if header == 'dark' %} page-header--dark {% endif %} {% if topshape == 'colored' %} page-header--colored {% endif %}">
     <div class="page-header__bg">
-
         {% if header == 'dark' %}
-             <img src="img/header-cemicircle-grey.svg" alt="" class="page-header__bg-image"/>
+        <img src="img/header-cemicircle-grey.svg" alt="" class="page-header__bg-image" />
+
+        {% else %} {% if topshape == 'colored' %}
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 992 428" class="page-header__bg-image">
+            <defs>
+                <mask id="imagemask" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="992" height="428">
+                    <path d="M0,0H992V313.2S821.28,428,495.42,428,0,313.2,0,313.2Z" fill="red" />
+                </mask>
+            </defs>
+            <image height="100%" preserveAspectRatio="xMinYMin slice" width="100%" xlink:href="img/image-top-bg.jpg" mask="url(#imagemask)" />
+        </svg>
         {% else %}
-            <img src="img/header-cemicircle.svg" alt="" class="page-header__bg-image"/>
-        {% endif %}
+        <img src="img/header-cemicircle.svg" alt="" class="page-header__bg-image" />
+
+        {% endif %} {% endif %}
     </div>
     <div class="container">
         <div class="page-header__row">
             <a href="index.html" class="page-header__logo">
-
                 {% if header == 'dark' %}
-                    <img src="img/logo-violet.svg" alt="Логотип" width="324" class="page-header__logo-image"/>
+                <img src="img/logo-violet.svg" alt="Логотип" width="324" class="page-header__logo-image" />
+
                 {% else %}
-                    <img src="img/logo.svg" alt="Логотип" width="324" class="page-header__logo-image"/>
+                <img src="img/logo.svg" alt="Логотип" width="324" class="page-header__logo-image" />
                 {% endif %}
             </a>
 
@@ -42,7 +53,7 @@
                         <div class="page-header__main-nav-more">
                             <span class="page-header__main-nav-more-content">
                                 <svg width="28" height="6" aria-hidden="true" class="icon-dots">
-                                    <use xlink:href="#dots"/>
+                                    <use xlink:href="#dots" />
                                 </svg>
                             </span>
                             <div class="page-header__main-nav-more-dropdown">
@@ -62,7 +73,7 @@
 
                         <a href="#" class="page-header__search-link js-search-modal-open">
                             <svg width="28" height="6" aria-hidden="true" class="icon-search">
-                                <use xlink:href="#search"/>
+                                <use xlink:href="#search" />
                             </svg>
                             <span class="page-header__search-link-text">
                                 Поиск
@@ -72,27 +83,27 @@
                     <div class="page-header__social">
                         <a href="#" class="page-header__social-link">
                             <svg width="22" height="22" aria-hidden="true" class="icon-instagram">
-                                <use xlink:href="#instagram"/>
+                                <use xlink:href="#instagram" />
                             </svg>
                         </a>
                         <a href="#" class="page-header__social-link">
                             <svg width="22" height="22" aria-hidden="true" class="icon-fb">
-                                <use xlink:href="#fb"/>
+                                <use xlink:href="#fb" />
                             </svg>
                         </a>
                         <a href="#" class="page-header__social-link">
                             <svg width="22" height="22" aria-hidden="true" class="icon-youtube">
-                                <use xlink:href="#youtube"/>
+                                <use xlink:href="#youtube" />
                             </svg>
                         </a>
                         <a href="#" class="page-header__social-link">
                             <svg width="22" height="22" aria-hidden="true" class="icon-telegram">
-                                <use xlink:href="#telegram"/>
+                                <use xlink:href="#telegram" />
                             </svg>
                         </a>
                         <a href="#" class="page-header__social-link">
                             <svg width="22" height="22" aria-hidden="true" class="icon-vk">
-                                <use xlink:href="#vk"/>
+                                <use xlink:href="#vk" />
                             </svg>
                         </a>
                     </div>
@@ -100,7 +111,7 @@
             </div>
             <a href="#" class="page-header__mobile-search-link js-search-modal-open">
                 <svg width="28" height="6" aria-hidden="true" class="icon-search">
-                    <use xlink:href="#search"/>
+                    <use xlink:href="#search" />
                 </svg>
             </a>
             <button class="page-header__burger">
@@ -115,22 +126,22 @@
     <div class="page-header__search-modal">
         <div class="container">
             <div class="page-header__search-modal-content">
-                <img src="img/clouds.svg" alt="" class="page-header__search-clouds">
+                <img src="img/clouds.svg" alt="" class="page-header__search-clouds" />
                 <button class="page-header__search-modal-close js-search-modal-close">
                     <svg width="60" height="60" aria-hidden="true" class="icon-cross">
-                        <use xlink:href="#cross"/>
+                        <use xlink:href="#cross" />
                     </svg>
                 </button>
                 <form action="/" method="GET" class="search__form">
                     <input type="search" name="q" class="search__form-input search__form-input--light-placeholder" placeholder="Что ищем?" />
-        
+
                     <button type="submit" class="search__form-submit">
                         <svg width="62" height="62" aria-hidden="true" class="icon-search">
                             <use xlink:href="#search-thin" />
                         </svg>
                     </button>
                 </form>
-                <img src="img/search-girl.png" alt="" class="page-header__search-girl">
+                <img src="img/search-girl.png" alt="" class="page-header__search-girl" />
             </div>
         </div>
     </div>

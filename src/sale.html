@@ -1,0 +1,12 @@
+{% set title = "Home Page" %}
+{% set activePage = "Home"  %}
+{% set header = "light"  %}
+{% set topshape = "colored"  %}
+{% extends "layout.html" %}
+{% block content %}
+    {% include "blocks/sale.html" %}
+    {% include "blocks/free-books-slider.html" %}
+    {% include "blocks/check-list-slider.html" %}
+    {% include "blocks/marathons-slider.html" %}
+    {% include "blocks/courses-slider.html" %}
+{% endblock %}

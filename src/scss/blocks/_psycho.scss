@@ -120,6 +120,7 @@
         flex-basis: 100%;
         margin-bottom: 1.5rem;
         margin-right: 0;
+        align-self: initial;
         &:nth-child(2) {
             margin-right: 0;
         }
@@ -137,7 +138,7 @@
     background: #F9F9F9;
     flex-grow: 1;
     transition: border-color .2s;
-
+    width: 100%;
     &.parsley-error {
         border-color: var(--primary-color);
     }
@@ -150,6 +151,7 @@
         color: inherit;
         @include breakpoint(small-mobile) {
             text-align: center;
+            
         }
     }
 }
@@ -179,5 +181,6 @@
     @include breakpoint(small-mobile) {
         font-size: 1.6rem;
         padding: 1.6rem 2rem;
+        align-self: initial;
     }
 }

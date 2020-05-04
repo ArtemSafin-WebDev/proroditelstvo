@@ -1,0 +1,29 @@
+{% set title = "Home Page" %}
+{% set activePage = "Home"  %}
+{% set header = "light"  %}
+
+{% extends "layout.html" %}
+{% block content %}
+    <section class="error">
+        <div class="container">
+            <div class="error__row">
+                <div class="error__text-content">
+                    <h1 class="error__heading">
+                        Ошибка 404
+                    </h1>
+                    <div class="error__text">
+                        <p>
+                            К сожалению, страница не найдена.
+
+                        </p>
+                        <p>
+                            Проверьте правильность ввода запроса или вернитесь на главную страницу.
+                        </p>
+                    </div>
+                    <a href="#" class="error__back-link">Вернуться на главную</a>
+                </div>
+                <img src="img/error.png" alt="" class="error__img">
+            </div>
+        </div>
+    </section>
+{% endblock %}
