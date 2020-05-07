@@ -371,20 +371,26 @@
                                 </div>
 
                                 <div class="text__article-buttons">
-                                    <div class="text__article-vote">
-                                        <a href="#" class="text__article-vote-link text__article-vote-link--interesting">
-                                            <svg width="16" height="14" aria-hidden="true" class="icon-vote-heart">
-                                                <use xlink:href="#vote-heart" />
-                                            </svg>
-                                            Интересно
-                                        </a>
-                                        <a href="#" class="text__article-vote-link">
-                                            <svg width="16" height="14" aria-hidden="true" class="icon-vote-smile">
-                                                <use xlink:href="#vote-smile" />
-                                            </svg>
-                                            Непонятно
-                                        </a>
-                                    </div>
+                                    <form class="text__article-vote" method="POST" action="/">
+                                        <label class="text__article-vote-label">
+                                            <input type="radio" name="vote" value="like" class="text__article-vote-input" />
+                                            <div class="text__article-vote-label-content">
+                                                <svg width="16" height="14" aria-hidden="true" class="icon-vote-heart">
+                                                    <use xlink:href="#vote-heart" />
+                                                </svg>
+                                                Интересно
+                                            </div>
+                                        </label>
+                                        <label class="text__article-vote-label">
+                                            <input type="radio" name="vote" value="dislike" class="text__article-vote-input" />
+                                            <div class="text__article-vote-label-content">
+                                                <svg width="16" height="14" aria-hidden="true" class="icon-vote-smile">
+                                                    <use xlink:href="#vote-smile" />
+                                                </svg>
+                                                Непонятно
+                                            </div>
+                                        </label>
+                                    </form>
 
                                     <div class="text__article-share">
                                         <p class="text__article-share-text">

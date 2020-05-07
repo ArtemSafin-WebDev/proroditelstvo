@@ -1,12 +1,12 @@
 .card-slider {
     position: relative;
     
-    padding: 8.4rem 0;
-
-
+   
+    padding: 8.4rem 0rem;
     @include breakpoint(small-mobile) {
         padding-top: 1.2rem;
-        padding-bottom: 6rem;
+        
+        padding-bottom: 7rem;
     }
 }
 

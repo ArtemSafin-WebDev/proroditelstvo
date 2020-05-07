@@ -38,9 +38,6 @@
             fill: var(--text-color);
         }
     }
-
-
-  
 }
 
 .text__main-heading {
@@ -171,6 +168,10 @@
     display: flex;
     margin-top: 13rem;
 
+    @include breakpoint(small-tablet) {
+        flex-direction: column;
+    }
+
     @include breakpoint(small-mobile) {
         margin-top: 3rem;
     }
@@ -179,6 +180,10 @@
 .text__article-layout-main {
     width: 50%;
     flex-grow: 1;
+    @include breakpoint(small-tablet) {
+        width: 100%;
+        flex-grow: 0;
+    }
 }
 
 .text__article-layout-sidebar {
@@ -192,6 +197,29 @@
 
     @include breakpoint(small-tablet) {
         display: none;
+
+        @supports (display: grid) {
+            width: 100%;
+            flex-shrink: 1;
+            margin: 0;
+            margin-top: 3rem;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-gap: 3rem;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        @supports (display: grid) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    @include breakpoint(small-mobile) {
+        @supports (display: grid) {
+            grid-gap: var(--content-padding);
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
     }
 }
 
@@ -456,7 +484,6 @@
     .floated-right {
         float: right;
         margin-left: 4.8rem;
-       
     }
 
     &::after {
@@ -487,7 +514,14 @@
     // }
 }
 
-.text__article-vote-link {
+.text__article-vote-input {
+    @include visuallyHidden();
+}
+
+.text__article-vote-label {
+}
+
+.text__article-vote-label-content {
     min-width: 27rem;
     display: inline-flex;
     justify-content: center;
@@ -499,6 +533,7 @@
     padding: 2.4rem;
     font-size: 1.9rem;
     transition: background-color 0.2s;
+    cursor: pointer;
     svg {
         fill: currentColor;
         flex-shrink: 0;
@@ -506,26 +541,13 @@
         width: 3rem;
         height: 3rem;
     }
-    &:link,
-    &:visited {
-        color: var(--text-color);
-    }
+   
 
     &:hover {
         background: darken(#f0f7fd, 5%);
     }
 
-    &--interesting {
-        background: #fb6955;
-        &:link,
-        &:visited {
-            color: white;
-        }
-
-        &:hover {
-            background: darken(#fb6955, 5%);
-        }
-    }
+   
 
     @include breakpoint(small-mobile) {
         width: 50%;
@@ -538,6 +560,18 @@
             height: 1.6rem;
             margin-right: 1rem;
         }
+    }
+}
+
+
+.text__article-vote-input:checked ~ .text__article-vote-label-content {
+    background: #fb6955;
+    color: white;
+    cursor: default;
+  
+
+    &:hover {
+        background: #fb6955;
     }
 }
 
@@ -708,7 +742,6 @@
         }
     }
 
-
     @include breakpoint(small-mobile) {
         font-size: 1.6rem;
         line-height: 1;
@@ -740,8 +773,6 @@
         z-index: 10;
     }
 }
-
-
 
 .text__article-advantages-block {
     margin: 9rem 0;
@@ -922,7 +953,7 @@
     width: 5rem;
     margin: 0 auto;
     margin-bottom: 1.7rem;
-  
+
     &::after {
         content: '';
         display: block;
@@ -979,8 +1010,7 @@
     text-transform: uppercase;
     margin-bottom: 1.2rem;
     @include breakpoint(small-mobile) {
-        
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -1045,7 +1075,6 @@
         background-color: lighten(#2d2d2d, 5%);
     }
 
-
     @include breakpoint(small-mobile) {
         font-size: 1.4rem;
         padding: 1.5rem;
@@ -1101,7 +1130,6 @@
         margin-bottom: 0;
     }
 
-
     @include breakpoint(small-mobile) {
         flex-direction: column;
         margin-bottom: var(--content-padding);
@@ -1142,9 +1170,6 @@
             margin-bottom: 0;
         }
     }
-
-
-    
 }
 
 .text__article-speakers-item-image {
@@ -1158,13 +1183,11 @@
     max-height: 90%;
     align-self: flex-end;
 
-
     @include breakpoint(small-mobile) {
         width: 80%;
         order: 1;
         align-self: initial;
         margin: 0 auto;
-       
     }
 }
 
@@ -1272,7 +1295,6 @@
         content: '';
         display: block;
         width: 100%;
-      
 
         padding-bottom: 50%;
 
