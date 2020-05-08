@@ -2901,7 +2901,7 @@ img.lazyload:not([src]) {
 
 .webinar__content {
   color: var(--primary-color);
-  background-color: #F4F2FB;
+  background-color: #f4f2fb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2909,17 +2909,18 @@ img.lazyload:not([src]) {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 2.3rem; }
-  .webinar__announcement .webinar__content {
-    padding: 0;
-    padding-top: 2rem;
-    padding-left: 3rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: initial;
-        -ms-flex-align: initial;
-            align-items: initial; }
+  @media only screen and (min-width: 969px) {
+    .webinar__announcement .webinar__content {
+      padding: 0;
+      padding-top: 2rem;
+      padding-left: 3rem;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: initial;
+          -ms-flex-align: initial;
+              align-items: initial; } }
   @media only screen and (max-width: 576px) {
     .webinar__content {
       padding: 0;
@@ -2935,7 +2936,7 @@ img.lazyload:not([src]) {
 
 .webinar__date {
   padding: 2.6rem 0;
-  color: #69686B;
+  color: #69686b;
   font-size: 2rem;
   line-height: 1.4;
   font-family: var(--ping-fang);
@@ -2946,19 +2947,20 @@ img.lazyload:not([src]) {
   white-space: nowrap;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg); }
-  .webinar__announcement .webinar__date {
-    padding: 0;
-    -webkit-writing-mode: horizontal-tb;
-        -ms-writing-mode: lr-tb;
-            writing-mode: horizontal-tb;
-    -webkit-transform: none;
-            transform: none;
-    font-size: 1.6rem;
-    line-height: 2.3rem;
-    margin-bottom: 1.5rem;
-    white-space: initial;
-    padding-right: 3rem;
-    color: var(--text-color); }
+  @media only screen and (min-width: 969px) {
+    .webinar__announcement .webinar__date {
+      padding: 0;
+      -webkit-writing-mode: horizontal-tb;
+          -ms-writing-mode: lr-tb;
+              writing-mode: horizontal-tb;
+      -webkit-transform: none;
+              transform: none;
+      font-size: 1.6rem;
+      line-height: 2.3rem;
+      margin-bottom: 1.5rem;
+      white-space: initial;
+      padding-right: 3rem;
+      color: var(--text-color); } }
   @media only screen and (max-width: 576px) {
     .webinar__date {
       padding: 0;
@@ -2985,15 +2987,16 @@ img.lazyload:not([src]) {
   line-height: 1.25;
   padding-left: 5rem;
   text-transform: uppercase; }
-  .webinar__announcement .webinar__name {
-    font-size: 2rem;
-    line-height: 2.5rem;
-    padding: 0;
-    padding-right: 3rem;
-    width: 100%;
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0; }
+  @media only screen and (min-width: 969px) {
+    .webinar__announcement .webinar__name {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      padding: 0;
+      padding-right: 3rem;
+      width: 100%;
+      -webkit-box-flex: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0; } }
   @media only screen and (max-width: 768px) {
     .webinar__name {
       font-size: 3.4rem; } }
@@ -3026,13 +3029,14 @@ img.lazyload:not([src]) {
       align-self: stretch;
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%; }
-  .webinar__announcement .webinar__subscribe {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    padding: 0;
-    padding-right: 3rem;
-    padding-bottom: 3rem;
-    padding-top: 2.5rem; }
+  @media only screen and (min-width: 969px) {
+    .webinar__announcement .webinar__subscribe {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      padding: 0;
+      padding-right: 3rem;
+      padding-bottom: 3rem;
+      padding-top: 2.5rem; } }
   @media only screen and (max-width: 576px) {
     .webinar__subscribe {
       -ms-flex-preferred-size: 100%;
@@ -3049,11 +3053,12 @@ img.lazyload:not([src]) {
   font-family: var(--ping-fang);
   margin-bottom: 2.5rem;
   color: var(--text-color); }
-  .webinar__announcement .webinar__author {
-    font-size: 1.6rem;
-    line-height: 2.3rem;
-    color: rgba(45, 45, 45, 0.7);
-    margin-bottom: 8rem; }
+  @media only screen and (min-width: 969px) {
+    .webinar__announcement .webinar__author {
+      font-size: 1.6rem;
+      line-height: 2.3rem;
+      color: rgba(45, 45, 45, 0.7);
+      margin-bottom: 8rem; } }
   @media only screen and (max-width: 576px) {
     .webinar__author {
       display: none; } }
@@ -3070,14 +3075,15 @@ img.lazyload:not([src]) {
   text-align: center;
   padding: 1.7rem 2.4rem;
   line-height: 1.4;
-  -webkit-transition: background-color .2s;
-  transition: background-color .2s;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
   position: relative;
   z-index: 5; }
-  .webinar__announcement .webinar__subscribe-link {
-    font-size: 1.4rem;
-    line-height: 1.2;
-    padding: 1.5rem; }
+  @media only screen and (min-width: 969px) {
+    .webinar__announcement .webinar__subscribe-link {
+      font-size: 1.4rem;
+      line-height: 1.2;
+      padding: 1.5rem; } }
   @media only screen and (max-width: 576px) {
     .webinar__subscribe-link {
       font-size: 1.4rem;
@@ -3095,18 +3101,19 @@ img.lazyload:not([src]) {
   width: 25rem;
   height: auto;
   max-width: none; }
-  .webinar__announcement .webinar__image {
-    right: 0;
-    left: auto;
-    bottom: 0;
-    width: 20rem;
-    height: auto;
-    max-height: 22rem;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -o-object-position: bottom;
-       object-position: bottom;
-    font-family: 'object-fit: contain; object-position: bottom;'; }
+  @media only screen and (min-width: 969px) {
+    .webinar__announcement .webinar__image {
+      right: 0;
+      left: auto;
+      bottom: 0;
+      width: 20rem;
+      height: auto;
+      max-height: 22rem;
+      -o-object-fit: contain;
+         object-fit: contain;
+      -o-object-position: bottom;
+         object-position: bottom;
+      font-family: 'object-fit: contain; object-position: bottom;'; } }
   @media only screen and (max-width: 576px) {
     .webinar__image {
       right: 0;
@@ -3123,7 +3130,11 @@ img.lazyload:not([src]) {
 
 @media only screen and (max-width: 968px) {
   .webinar__announcement {
-    display: none; } }
+    margin-top: 4rem; } }
+
+@media only screen and (max-width: 576px) {
+  .webinar__announcement {
+    margin-top: 2rem; } }
 
 .articles {
   margin-bottom: 11rem; }

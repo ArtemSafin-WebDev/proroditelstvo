@@ -10,6 +10,8 @@ export default function() {
             slidesPerView: 'auto',
             watchOverflow: true,
             spaceBetween: 18,
+            loop: true,
+            loopedSlides: 3,
             navigation: {
                 nextEl: element.querySelector('.all-courses__slider-arrow--next'),
                 prevEl: element.querySelector('.all-courses__slider-arrow--prev')
