@@ -1299,6 +1299,30 @@
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script src="js/app.js"></script>
+            <script>
+                // Временные скрипты форм
+
+                const psychoForms = Array.from(document.querySelectorAll('.psycho__form'));
+
+                psychoForms.forEach(form => {
+                    form.addEventListener('submit', event => {
+                        event.preventDefault();
+                        const psychoContainer = form.closest('.psycho');
+
+                        if (
+                            $(form)
+                                .parsley()
+                                .isValid() &&
+                            psychoContainer
+                        ) {
+                            psychoContainer.classList.add('success');
+                            setTimeout(() => {
+                                psychoContainer.classList.remove('success');
+                            }, 3500);
+                        }
+                    });
+                });
+            </script>
         </div>
     </body>
 </html>

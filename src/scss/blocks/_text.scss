@@ -166,7 +166,7 @@
 
 .text__article-layout {
     display: flex;
-    margin-top: 13rem;
+    margin-top: 8rem;
 
     @include breakpoint(small-tablet) {
         flex-direction: column;

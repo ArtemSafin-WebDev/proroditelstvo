@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap&subset=cyrillic" rel="stylesheet" />
         <link rel="stylesheet" href="css/styles.min.css" />
         <title>
-            Home Page
+            Прородительство - Главная
         </title>
     </head>
     <body class="no-touch" ontouchstart="">
@@ -976,6 +976,16 @@
                                 </form>
                             </div>
                             <img src="img/psycho.png" alt="" class="psycho__image" />
+                            <div class="psycho__success">
+                                <div class="psycho__success-content">
+                                    <div class="psycho__success-content-large-text">
+                                        Спасибо!
+                                    </div>
+                                    <div class="psycho__success-content-small-text">
+                                        Ваше сообщение отправлено.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -1638,6 +1648,30 @@
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script src="js/app.js"></script>
+            <script>
+                // Временные скрипты форм
+
+                const psychoForms = Array.from(document.querySelectorAll('.psycho__form'));
+
+                psychoForms.forEach(form => {
+                    form.addEventListener('submit', event => {
+                        event.preventDefault();
+                        const psychoContainer = form.closest('.psycho');
+
+                        if (
+                            $(form)
+                                .parsley()
+                                .isValid() &&
+                            psychoContainer
+                        ) {
+                            psychoContainer.classList.add('success');
+                            setTimeout(() => {
+                                psychoContainer.classList.remove('success');
+                            }, 3500);
+                        }
+                    });
+                });
+            </script>
         </div>
     </body>
 </html>

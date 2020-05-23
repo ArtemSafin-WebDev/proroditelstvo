@@ -8,8 +8,8 @@
 .psycho__row {
     display: flex;
     align-items: center;
-    background: #F9F9F9;
-
+    background: #f9f9f9;
+    position: relative;
     @include breakpoint(small-mobile) {
         flex-direction: column;
         align-items: initial;
@@ -29,7 +29,6 @@
     flex-direction: column;
     align-self: stretch;
 
-
     @include breakpoint(small-mobile) {
         padding: 2.4rem;
         padding-top: 4rem;
@@ -41,7 +40,6 @@
     }
 }
 
-
 .psycho__title {
     font-size: 3.6rem;
     line-height: 1.2;
@@ -52,10 +50,8 @@
     @include breakpoint(small-mobile) {
         font-size: 1.6rem;
         line-height: 1.3;
-
     }
 }
-
 
 .psycho__description {
     font-size: 2rem;
@@ -69,40 +65,33 @@
     }
 }
 
-
 .psycho__image {
     width: 55rem;
     height: auto;
     flex-shrink: 0;
     mix-blend-mode: multiply;
 
-
     @include breakpoint(small-tablet) {
         width: 40rem;
     }
-
 
     @include breakpoint(small-mobile) {
         position: absolute;
         top: 2.8rem;
         width: 18.7rem;
-        right: -.8rem;
+        right: -0.8rem;
     }
 }
-
 
 .psycho__form {
     margin-top: auto;
     display: flex;
-
 
     @include breakpoint(small-mobile) {
         flex-direction: column;
         margin: 0;
     }
 }
-
-
 
 .psycho__form-group {
     flex-basis: 30%;
@@ -115,7 +104,6 @@
         margin-right: 2.3rem;
     }
 
-
     @include breakpoint(small-mobile) {
         flex-basis: 100%;
         margin-bottom: 1.5rem;
@@ -127,17 +115,16 @@
     }
 }
 
-
 .psycho__form-input {
-    border: 1px solid #BCBCBC;
-    border-bottom-width: .3rem;
+    border: 1px solid #bcbcbc;
+    border-bottom-width: 0.3rem;
     padding: 1.9rem 2rem;
     font: inherit;
     width: 100%;
     font-size: 1.6rem;
-    background: #F9F9F9;
+    background: #f9f9f9;
     flex-grow: 1;
-    transition: border-color .2s;
+    transition: border-color 0.2s;
     width: 100%;
     &.parsley-error {
         border-color: var(--primary-color);
@@ -151,12 +138,9 @@
         color: inherit;
         @include breakpoint(small-mobile) {
             text-align: center;
-            
         }
     }
 }
-
-
 
 .psycho__form-submit {
     flex-shrink: 0;
@@ -171,16 +155,78 @@
     line-height: 1.4;
     letter-spacing: 0.05rem;
     align-self: flex-start;
-    transition: background-color .2s;
+    transition: background-color 0.2s;
     &:hover {
         background-color: var(--text-color);
     }
-
-
 
     @include breakpoint(small-mobile) {
         font-size: 1.6rem;
         padding: 1.6rem 2rem;
         align-self: initial;
+    }
+}
+
+.psycho__success {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f9f9f9;
+    padding: 4rem 15rem;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/hands.jpg'), url('../img/success-hemisphere.svg');
+    background-position: right 15rem center, right center;
+    background-size: 30rem auto, auto 100%;
+    background-repeat: no-repeat, no-repeat;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility 0s linear .3s;
+    z-index: 80;
+    .psycho.success & {
+        opacity: 1;
+        visibility: visible;
+        transition: all .3s;
+    }
+
+
+    @include breakpoint(small-tablet) {
+        padding: 4rem 10rem;
+    }
+
+    @include breakpoint(small-mobile) {
+        padding: 2rem;
+        background-image: none;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.psycho__success-content-large-text {
+    font-size: 4.6rem;
+    line-height: 5.7rem;
+    font-weight: 700;
+    margin-bottom: 1.7rem;
+    text-transform: uppercase;
+
+    @include breakpoint(small-mobile) {
+        font-size: 2.6rem;
+        line-height: 1.3;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.psycho__success-content-small-text {
+    font-size: 2.1rem;
+    line-height: 3.2rem;
+    font-family: var(--helios-standard);
+    @include breakpoint(small-mobile) {
+        font-size: 1.6rem;
+        line-height: 1.3;
     }
 }
