@@ -38,7 +38,7 @@
     left: calc((100vw - 100%) / 2 * -1);
     font-size: 2rem;
     text-transform: uppercase;
-    
+
     font-weight: 700;
     padding: 1.2rem 2rem;
     right: calc(100% - 18rem);
@@ -78,14 +78,12 @@
     }
 }
 
-
-
 .all-courses__slider-arrow {
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    transition: opacity .2s;
+    transition: opacity 0.2s;
     @include breakpoint(small-mobile) {
         display: none;
     }
@@ -93,11 +91,10 @@
         fill: var(--primary-color);
         display: block;
         flex-shrink: 0;
-        transition: fill .2s;
+        transition: fill 0.2s;
         width: 1.8rem;
         height: 3rem;
     }
-
 
     &--prev {
         left: auto;
@@ -119,7 +116,7 @@
     }
 
     &.swiper-button-disabled {
-        opacity: .5;
+        opacity: 0.5;
         cursor: default;
     }
 
@@ -141,12 +138,11 @@
     flex-grow: 1;
     color: white;
     user-select: none;
-    
+
     &:link,
     &:visited {
         color: white;
     }
-
 
     &--dark-text {
         color: var(--text-color);
@@ -155,8 +151,6 @@
             color: var(--text-color);
         }
     }
-
-
 
     &--compact {
         flex-direction: column;
@@ -177,7 +171,6 @@
         align-items: initial;
         min-height: auto;
         background-color: rgba(var(--gradient-color), 1);
-       
     }
 }
 
@@ -191,7 +184,6 @@
 
     z-index: -2;
 
-
     .all-courses__slider-card--compact & {
         width: 100%;
         @include objectFitCoverTop();
@@ -201,12 +193,9 @@
         width: 100%;
         @include objectFitCoverTop();
     }
-   
 }
 
-
 .all-courses__slider-card-image-container {
-
     .all-courses__slider-card--compact & {
         position: relative;
         top: 0;
@@ -218,7 +207,6 @@
             display: block;
             width: 100%;
             padding-bottom: 56.25%;
-           
         }
 
         &::after {
@@ -242,7 +230,6 @@
             display: block;
             width: 100%;
             padding-bottom: 56.25%;
-           
         }
 
         &::after {
@@ -287,7 +274,6 @@
     padding-bottom: 2rem;
     padding-right: 7rem;
 
-    
     .all-courses__slider-card--compact & {
         padding: 3rem;
         width: 100%;
@@ -296,7 +282,6 @@
         flex-direction: column;
         @include breakpoint(small-mobile) {
             padding: 2rem;
-            
         }
     }
 
@@ -315,14 +300,12 @@
     align-items: flex-start;
     margin-bottom: 4rem;
 
-
     .all-courses__slider-card--compact & {
         margin-bottom: 3.6rem;
         @include breakpoint(small-mobile) {
             margin-bottom: 2.5rem;
         }
     }
-
 
     @include breakpoint(small-mobile) {
         margin-bottom: 2.5rem;
@@ -332,8 +315,6 @@
 .all-courses__slider-card-top-row-info {
     width: 50%;
     flex-grow: 1;
-
-    
 }
 
 .all-courses__slider-card-author {
@@ -363,7 +344,6 @@
         padding-bottom: 100%;
     }
 
-
     .all-courses__slider-card--compact & {
         width: 10rem;
         margin-bottom: 1.3rem;
@@ -390,7 +370,6 @@
     line-height: 1.7rem;
     text-transform: uppercase;
 
-
     .all-courses__slider-card--compact & {
         font-size: 1rem;
         line-height: 1.2rem;
@@ -410,7 +389,6 @@
     font-weight: 700;
     margin-bottom: 1.8rem;
 
-
     .all-courses__slider-card--compact & {
         font-size: 1rem;
         line-height: 1.2;
@@ -429,7 +407,6 @@
     text-transform: uppercase;
     margin-bottom: 2.5rem;
     padding-right: 1.5rem;
-
 
     .all-courses__slider-card--compact & {
         font-size: 2rem;
@@ -454,8 +431,6 @@
 .all-courses__slider-card-top-row-date {
     margin-right: 2.5rem;
 
-
-
     .all-courses__slider-card--compact & {
         margin-right: 1.8rem;
     }
@@ -470,32 +445,28 @@
     line-height: 1.2rem;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: .5rem;
-
- 
+    margin-bottom: 0.5rem;
 
     .all-courses__slider-card--compact & {
         font-size: 1rem;
         line-height: 1.2rem;
         margin-bottom: 0.5rem;
 
-        color: rgba(white, .6);
+        color: rgba(white, 0.6);
         @include breakpoint(small-mobile) {
-            font-size: .8rem;
+            font-size: 0.8rem;
             line-height: 1.2;
             margin-bottom: 0.5rem;
         }
     }
 
-   
     .all-courses__slider-card--dark-text & {
         color: var(--text-color);
-        opacity: .5;
+        opacity: 0.5;
     }
 
-   
     @include breakpoint(small-mobile) {
-        font-size: .8rem;
+        font-size: 0.8rem;
         line-height: 1.2;
         margin-bottom: 0.5rem;
     }
@@ -511,18 +482,23 @@
         font-size: 1rem;
         line-height: 1.2rem;
         @include breakpoint(small-mobile) {
-            font-size: .8rem;
+            font-size: 0.8rem;
             line-height: 1.2;
         }
     }
     @include breakpoint(small-mobile) {
-        font-size: .8rem;
+        font-size: 0.8rem;
         line-height: 1.2;
     }
 }
 
 .all-courses__slider-card-content-middle-row {
     margin-bottom: 4.8rem;
+
+
+    .all-courses__slider-card-content-text {
+        margin: 0 !important;
+    }
 
     .all-courses__slider-card--compact & {
         margin-bottom: 3.5rem;
@@ -542,20 +518,27 @@
     line-height: 2.1rem;
     max-width: 48rem;
     border-left: 3px solid #ff7070;
-
+    margin-top: 2rem;
+    
+    
     .all-courses__slider-card--compact & {
         font-size: 1.2rem;
         line-height: 1.8rem;
         border-left: none;
         max-width: auto;
         padding: 0;
+       
     }
+
+   
+    
     @include breakpoint(small-mobile) {
         font-size: 1.2rem;
         line-height: 1.8rem;
         border-left: none;
         max-width: auto;
         padding: 0;
+       
     }
 }
 
@@ -567,9 +550,7 @@
     @include breakpoint(small-mobile) {
         flex-wrap: wrap;
     }
-    
 }
-
 
 .all-courses__slider-card-content-price {
     @include breakpoint(small-mobile) {
@@ -584,7 +565,6 @@
     font-size: 2.5rem;
     line-height: 3.1rem;
     margin-bottom: 0.3rem;
-
 
     .all-courses__slider-card--compact & {
         font-size: 1.6rem;
@@ -617,12 +597,10 @@
         z-index: 2;
     }
 
-
     .all-courses__slider-card--compact & {
         font-size: 1.2rem;
-        line-height: 1.5rem;    
+        line-height: 1.5rem;
     }
-
 
     @include breakpoint(small-mobile) {
         font-size: 1.2rem;
@@ -638,32 +616,29 @@
     text-transform: uppercase;
     padding: 1.6rem 4.2rem;
     margin-left: 3rem;
-    background: #EB5757;
+    background: #eb5757;
     color: white;
-    transition: background-color .2s;
+    transition: background-color 0.2s;
     margin-right: 2rem;
     &:link,
     &:visited {
         color: white;
     }
 
-
     &:hover {
-        background: darken(#EB5757, 6%);
+        background: darken(#eb5757, 6%);
     }
-
-
 
     .all-courses__slider-card--compact & {
         font-size: 1.4rem;
         line-height: 2rem;
         padding: 1rem 2.4rem;
-        margin-left: 1.8rem; 
+        margin-left: 1.8rem;
 
         @include breakpoint(small-mobile) {
             font-size: 1.2rem;
             line-height: 2rem;
-            padding: .8rem 2.2rem;
+            padding: 0.8rem 2.2rem;
             margin: 0;
         }
     }
@@ -671,7 +646,7 @@
     @include breakpoint(small-mobile) {
         font-size: 1.2rem;
         line-height: 2rem;
-        padding: .8rem 2.2rem;
+        padding: 0.8rem 2.2rem;
         margin: 0;
     }
 }
@@ -683,39 +658,33 @@
     font-size: 1.4rem;
     line-height: 2rem;
     text-transform: uppercase;
-    transition: color .2s, opacity .2s;
+    transition: color 0.2s, opacity 0.2s;
     &:link,
     &:visited {
         color: rgba(white, 0.5);
     }
 
-
     &:hover {
         color: white;
     }
-
 
     .all-courses__slider-card--dark-text & {
         &:link,
         &:visited {
             color: var(--text-color);
-            opacity: .5;
+            opacity: 0.5;
         }
-    
-    
+
         &:hover {
             color: var(--text-color);
             opacity: 1;
         }
     }
 
-
-
     .all-courses__slider-card--compact & {
         font-size: 1rem;
         line-height: 1.3;
     }
-
 
     @include breakpoint(small-mobile) {
         font-size: 1rem;
@@ -744,7 +713,6 @@
     }
 }
 
-
 .all-courses__small-slider-heading {
     font-weight: 700;
     font-size: 2.6rem;
@@ -752,25 +720,20 @@
     text-transform: uppercase;
     display: flex;
 
-
-   
     @include breakpoint(small-mobile) {
         font-size: 2.1rem;
 
         font-size: 1.8rem;
-       
+
         line-height: 1.2;
         display: grid;
         grid-template-columns: fit-content(15rem) auto;
     }
 }
 
-
 .all-courses__small-slider-heading-text {
-   
     // width: min-content;
 }
-
 
 .all-courses__small-slider-heading-link {
     color: var(--primary-color);
@@ -780,10 +743,8 @@
     text-transform: uppercase;
     align-self: flex-start;
     margin-left: 2.7rem;
-    transition: color .2s;
+    transition: color 0.2s;
 
-
-   
     &:link,
     &:visited {
         color: var(--primary-color);
@@ -793,7 +754,6 @@
         color: var(--text-color);
     }
 
-
     @include breakpoint(small-mobile) {
         font-size: 1.2rem;
         margin-left: 0.6rem;
@@ -801,7 +761,6 @@
         top: -0.3rem;
     }
 }
-
 
 .all-courses__small-slider-arrows {
     display: flex;
@@ -813,10 +772,9 @@
     }
 }
 
-
 .all-courses__small-slider-arrow {
     margin-right: 4.2rem;
-    transition: opacity .2s;
+    transition: opacity 0.2s;
     &:last-child {
         margin-right: 0;
     }
@@ -825,11 +783,11 @@
         height: 3rem;
         fill: var(--primary-color);
         flex-shrink: 0;
-        transition: fill .2s;
+        transition: fill 0.2s;
     }
 
     &.swiper-button-disabled {
-        opacity: .5;
+        opacity: 0.5;
     }
 
     &:not(.swiper-button-disabled):hover {
@@ -838,7 +796,6 @@
         }
     }
 }
-
 
 .all-courses__small-slider-wrapper {
     .swiper-slide {
@@ -851,7 +808,6 @@
         }
     }
 
-
     .swiper-container {
         padding: 2rem;
         margin: -2rem;
@@ -863,7 +819,6 @@
     }
 }
 
-
 .all-courses__slider-card-tag {
     position: absolute;
     top: 3.2rem;
@@ -874,13 +829,12 @@
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.2rem;
-    padding: .5rem .8rem;
-
+    padding: 0.5rem 0.8rem;
 
     @include breakpoint(small-mobile) {
-        font-size: .8rem;
+        font-size: 0.8rem;
         top: 2rem;
         left: 2rem;
-        padding: .3rem .6rem;
+        padding: 0.3rem 0.6rem;
     }
 }
