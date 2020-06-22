@@ -1375,6 +1375,29 @@
                         }
                     });
                 });
+
+                // About forms
+
+                const aboutForms = Array.from(document.querySelectorAll('.write-us__form'));
+
+                aboutForms.forEach(form => {
+                    form.addEventListener('submit', event => {
+                        event.preventDefault();
+                        const container = form.closest('.write-us');
+
+                        if (
+                            $(form)
+                                .parsley()
+                                .isValid() &&
+                            container
+                        ) {
+                            container.classList.add('success');
+                            setTimeout(() => {
+                                container.classList.remove('success');
+                            }, 3500);
+                        }
+                    });
+                });
             </script>
         </div>
     </body>

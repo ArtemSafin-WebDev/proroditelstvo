@@ -185,7 +185,7 @@
     visibility: hidden;
     transition: opacity .3s, visibility 0s linear .3s;
     z-index: 80;
-    .psycho.success & {
+    .success & {
         opacity: 1;
         visibility: visible;
         transition: all .3s;

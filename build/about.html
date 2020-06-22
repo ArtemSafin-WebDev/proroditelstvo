@@ -398,6 +398,16 @@
                             <div class="write-us-right-col">
                                 <img src="img/write-us.jpg" alt="" class="write-us__image" />
                             </div>
+                            <div class="psycho__success">
+                                <div class="psycho__success-content">
+                                    <div class="psycho__success-content-large-text">
+                                        Спасибо!
+                                    </div>
+                                    <div class="psycho__success-content-small-text">
+                                        Ваше сообщение отправлено.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -597,6 +607,29 @@
                             psychoContainer.classList.add('success');
                             setTimeout(() => {
                                 psychoContainer.classList.remove('success');
+                            }, 3500);
+                        }
+                    });
+                });
+
+                // About forms
+
+                const aboutForms = Array.from(document.querySelectorAll('.write-us__form'));
+
+                aboutForms.forEach(form => {
+                    form.addEventListener('submit', event => {
+                        event.preventDefault();
+                        const container = form.closest('.write-us');
+
+                        if (
+                            $(form)
+                                .parsley()
+                                .isValid() &&
+                            container
+                        ) {
+                            container.classList.add('success');
+                            setTimeout(() => {
+                                container.classList.remove('success');
                             }, 3500);
                         }
                     });

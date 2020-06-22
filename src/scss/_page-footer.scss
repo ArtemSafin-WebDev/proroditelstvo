@@ -9,6 +9,7 @@
     width: 100%;
     bottom: 0;
     z-index: -1;
+    overflow: hidden;
 }
 
 .page-footer__bg-image {
@@ -20,7 +21,7 @@
     max-width: none;
     width: 213rem;
     bottom: -16rem;
-    position: absolute;
+    position: relative;
 
     @media screen and (min-width: 2131px) {
         width: 100%;
